@@ -12,27 +12,16 @@ html {
 }
 
 body {
-  background-color: var(--color-black);
   color: var(--color-white);
+  background-color: #222;
   font-family: Roboto, sans-serif;
   line-height: 1.4;
+  position: relative;
 }
 
 .container {
-  max-width: 100%;
   margin: 0 auto;
-}
-
-@media (width <= 1200px) {
-  .container {
-    padding: 40px;
-  }
-}
-
-@media (width <= 600px) {
-  .container {
-    padding: 40px 20px;
-  }
+  inset: 0;
 }
 
 .btn {
@@ -124,6 +113,8 @@ header {
   display: flex;
   position: sticky;
   top: 0;
+  left: 0;
+  right: 0;
 }
 
 header .logo {
@@ -134,7 +125,11 @@ header .logo {
 }
 
 header .logo span {
-  color: var(--color-primary);
+  color: var(--color-black);
+}
+
+header .logo .logo_span {
+  color: #fff;
 }
 
 header nav ul {
@@ -177,10 +172,11 @@ header .user img {
 
 @media (width <= 600px) {
   header {
+    gap: 20px;
     padding: 14px 20px;
   }
 
-  header nav {
+  header .logo .logo_span {
     display: none;
   }
 
@@ -204,23 +200,63 @@ footer a:hover {
 }
 
 .headline {
-  margin-bottom: 40px;
+  text-align: center;
+  background-image: url("https://github.com/JoSeungHwan/notepad/blob/master/img/myimg/gray-concrete-textured-wall.jpg?raw=true");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  margin: -70px auto;
+  position: sticky;
 }
 
 .headline h1 {
   margin-bottom: 40px;
+  padding-top: 100px;
   font-family: Oswald, sans-serif;
   font-size: 80px;
   line-height: 1;
 }
 
-.headline h1 span {
-  color: var(--color-primary);
+.headline h1 span, .headline p {
+  color: #0e111b;
+}
+
+.headline img {
+  width: 600px;
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-50%);
 }
 
 @media (width <= 600px) {
   .headline h1 {
-    font-size: 60px;
+    font-size: 50px;
+  }
+
+  .headline img {
+    width: 300px;
+  }
+}
+
+@media (height <= 1000px) {
+  .headline h1 {
+    font-size: 50px;
+  }
+}
+
+@media (height <= 750px) {
+  .headline h1 {
+    font-size: 40px;
+  }
+}
+
+@media (height <= 500px) {
+  .headline h1 {
+    font-size: 40px;
+  }
+
+  .headline img {
+    display: none;
   }
 }
 
@@ -260,28 +296,322 @@ footer a:hover {
   font-weight: 700;
 }
 
-.headline {
-  text-align: center;
-  background-image: url("https://github.com/JoSeungHwan/notepad/blob/master/img/myimg/gray-concrete-textured-wall.jpg?raw=true");
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-  margin: -70px auto;
+.aboutme {
+  padding: auto;
+  position: relative;
 }
 
-.headline h1 {
-  padding-top: 100px;
+.aboutme .work {
+  place-content: center;
+  display: flex;
 }
 
-.headline p, .headline h1 span {
-  color: #0e111b;
+@media (width <= 1300px) {
+  .aboutme .work {
+    display: block;
+  }
 }
 
-.headline img {
-  margin-top: 90px;
+.aboutme .h11 {
+  place-content: center flex-start;
+  max-width: 946.28px;
+  display: block;
 }
 
 .aboutme h1 {
   margin-top: 100px;
+  margin-left: 50px;
+  font-size: 50px;
+}
+
+.aboutme h3 {
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  font-size: 25px;
+}
+
+.aboutme span {
+  color: silver;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+}
+
+.aboutme div {
+  color: #d3d3d3;
+  font-family: "Noto+Sans+KR", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.aboutme .work1 {
+  color: gold;
+  max-width: 500px;
+  max-height: 650px;
+  margin: 20px;
+}
+
+.aboutme .work1 .work11 {
+  background-color: #373737;
+  border-radius: .7rem;
+  max-width: 500px;
+  height: 610px;
+  padding: 20px;
+  position: relative;
+}
+
+.aboutme .work1 .power {
+  margin: 10px auto 10px 10px;
+  transition: all .3s;
+}
+
+.aboutme .power img {
+  border-radius: 20%;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.aboutme .work11 .skills1 {
+  height: 50px;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+
+@media (width <= 600px) {
+  .aboutme .work11 .skills1, .aboutme .work22 .skills2 {
+    height: 50px;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+  }
+}
+
+.aboutme .work22 .skills2 {
+  height: 50px;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+
+.aboutme .xcode, .aboutme .swift, .aboutme .android, .aboutme .kotlin, .aboutme .html, .aboutme .css, .aboutme .js, .aboutme .ts, .aboutme .react {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+@media (width <= 600px) {
+  .aboutme .power img {
+    border-radius: 20%;
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .aboutme .sanggong img {
+    border-radius: 20%;
+    max-width: 150px;
+    max-height: 150px;
+    margin-right: 20px;
+  }
+
+  @media (width <= 600px) {
+    .aboutme .power img {
+      border-radius: 20%;
+      max-width: 150px;
+      max-height: 150px;
+    }
+
+    .aboutme .sanggong img {
+      border-radius: 20%;
+      max-width: 100px;
+      max-height: 100px;
+      margin-right: 20px;
+    }
+
+    .aboutme .xcode, .aboutme .swift {
+      border-radius: 20%;
+      max-width: 50px;
+      max-height: 50px;
+    }
+
+    .aboutme .android {
+      border-radius: 10%;
+      max-height: 50px;
+      top: 10px;
+      left: 135px;
+    }
+
+    .aboutme .kotlin {
+      border-radius: 10%;
+      max-height: 50px;
+      top: 10px;
+      left: 240.7px;
+    }
+
+    .aboutme .html, .aboutme .css, .aboutme .js, .aboutme .ts, .aboutme .react {
+      max-width: 50px;
+      max-height: 50px;
+    }
+  }
+}
+
+.aboutme .work2 {
+  color: gold;
+  max-width: 500px;
+  height: 650px;
+  margin: 20px;
+}
+
+.aboutme .work2 .work22 {
+  background-color: #373737;
+  border-radius: .7rem;
+  height: 610px;
+  padding: 20px;
+  position: relative;
+}
+
+.aboutme .work2 .sanggong {
+  border-radius: 20%;
+  margin: 10px auto 10px 10px;
+  transition: all .3s;
+  display: flex;
+}
+
+.aboutme .sanggong img {
+  border-radius: 20%;
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+}
+
+.aboutme .work3 {
+  place-content: center;
+  margin: 20px;
+  display: flex;
+}
+
+.aboutme .work3 .work33 {
+  background-color: #373737;
+  border-radius: .7rem;
+  max-width: 950px;
+  padding: 20px;
+}
+
+@media (width <= 1300px) {
+  .aboutme .work3 {
+    margin: 20px;
+    display: block;
+  }
+
+  .aboutme .work3 .work33 {
+    background-color: #373737;
+    border-radius: .7rem;
+    max-width: 460px;
+    padding: 20px;
+  }
+}
+
+@media (width <= 600px) {
+  .aboutme .work3 {
+    margin: 20px;
+    display: block;
+  }
+
+  .aboutme .work3 .work33 {
+    background-color: #373737;
+    border-radius: .7rem;
+    max-width: 460px;
+    padding: 20px;
+  }
+}
+
+.aboutme h1 .skill_tools {
+  font-size: 50px;
+}
+
+.aboutme .skillLogo {
+  place-content: center;
+  display: flex;
+}
+
+@media (width <= 600px) {
+  .aboutme .skillLogo {
+    display: block;
+  }
+}
+
+@media (width <= 1300px) {
+  .aboutme .skillLogo {
+    display: block;
+  }
+}
+
+.aboutme .front, .aboutme .ap {
+  margin-left: 20px;
+  font-family: "Noto+Sans+KR", sans-serif;
+  font-size: 20px;
+}
+
+.aboutme .front_skill {
+  place-content: center;
+  max-width: 500px;
+}
+
+.aboutme .skillLogo .front {
+  width: 500px;
+  margin-left: 20px;
+  display: flex;
+}
+
+.aboutme .skillLogo .ap {
+  width: 500px;
+}
+
+.aboutme .skill .frontend {
+  max-width: 310px;
+  margin: 20px;
+}
+
+.aboutme .skill .app_skill1 {
+  max-width: 480px;
+  margin: 20px;
+}
+
+.aboutme .skill .frontend_group {
+  background-color: #373737;
+  border-radius: .7rem;
+  max-width: 370px;
+  height: 50px;
+  padding: 20px;
+}
+
+.aboutme .skill .app_group {
+  background-color: #373737;
+  border-radius: .7rem;
+  max-width: 220px;
+  height: 50px;
+  padding: 20px;
+}
+
+@media (width <= 600px) {
+  .aboutme .skill .frontend_group {
+    background-color: #373737;
+    border-radius: .7rem;
+    max-width: 270px;
+    height: 50px;
+    padding: 20px;
+  }
+
+  .aboutme .skill .app_group {
+    background-color: #373737;
+    border-radius: .7rem;
+    max-width: 220px;
+    height: 50px;
+    padding: 20px;
+  }
+}
+
+.project h1 {
+  margin-top: 50px;
+  margin-left: 50px;
+  font-size: 50px;
 }
 /*# sourceMappingURL=index.af20ad6e.css.map */

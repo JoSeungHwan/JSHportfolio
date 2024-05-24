@@ -12,7 +12,8 @@ html {
   --color-area: #1c212e;
 }
 body {
-  background-color: var(--color-black);
+  position: relative;
+  background-color: #222222;
   /* background-color: #dcdcdc; */
   font-family: 'Roboto', sans-serif;
   line-height: 1.4;
@@ -21,18 +22,26 @@ body {
 
 /* Container */
 .container {
-  max-width: 100%;
+  /* position: relative; */
+  /* max-width: 100vh;
+  max-height: 100vh; */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   margin: 0 auto;
   /* padding: 40px 0; */
 }
 @media (max-width: 1200px) {
   .container {
-    padding: 40px;
+    /* max-width: 100vh;
+    max-height: 100vh; */
   }
 }
 @media (max-width: 600px) {
   .container {
-    padding: 40px 20px;
+    /* max-width: 100vh;
+    max-height: 100vh; */
   }
 }
 
@@ -122,10 +131,13 @@ header {
   /* background-color: rgba(14, 17, 27, 0.9); */
   position: sticky;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 9;
   display: flex;
   align-items: flex-end;
   gap: 40px;
+  /* width: 100%; */
 }
 header .logo {
   font-family: 'Oswald', sans-serif;
@@ -134,7 +146,10 @@ header .logo {
   text-decoration: none;
 }
 header .logo span {
-  color: var(--color-primary);
+  color: var(--color-black);
+}
+header .logo .logo_span {
+  color: white;
 }
 header nav ul {
   display: flex;
@@ -171,8 +186,12 @@ header .user img {
 @media (max-width: 600px) {
   header {
     padding: 14px 20px;
+    gap: 20px;
   }
   header nav {
+    /* display: none; */
+  }
+  header .logo .logo_span {
     display: none;
   }
   header .user {
@@ -196,22 +215,61 @@ footer a:hover {
 /* components/Headline */
 .headline {
   margin-bottom: 40px;
+  position: sticky;
+  height: 100vh;
+  width: 100%;
+  margin: -70px auto;
+  background-image: url(https://github.com/JoSeungHwan/notepad/blob/master/img/myimg/gray-concrete-textured-wall.jpg?raw=true);
+  background-size: cover;
+  /* background-color: #f86a05; */
+  text-align: center;
 }
 .headline h1 {
   font-family: 'Oswald', sans-serif;
   font-size: 80px;
   line-height: 1;
   margin-bottom: 40px;
+  padding-top: 100px;
 }
 .headline h1 span {
-  color: var(--color-primary);
+  /* color: var(--color-primary); */
+  color: #0e111b;
 }
 .headline p {
-  color: var(--color-white-30);
+  /* color: var(--color-white-30); */
+  color: #0e111b;
+}
+.headline img {
+  position: absolute;
+  bottom: 0;
+  width: 600px;
+  transform: translateX(-50%);
 }
 @media (max-width: 600px) {
   .headline h1 {
-    font-size: 60px;
+    font-size: 50px;
+  }
+  .headline img {
+    width: 300px;
+  }
+}
+@media (max-height: 1000px) {
+  .headline h1 {
+    font-size: 50px;
+  }
+}
+@media (max-height: 750px) {
+  .headline h1 {
+    font-size: 40px;
+  }
+}
+@media (max-height: 500px) {
+  .headline h1 {
+    font-size: 40px;
+  }
+  .headline img {
+    display: none;
+    /* height: 500px; */
   }
 }
 
@@ -249,31 +307,392 @@ footer a:hover {
   text-align: center;
 }
 
-.headline {
-  height: 100vh;
-  width: 100%;
-  margin: -70px auto;
-  background-image: url(https://github.com/JoSeungHwan/notepad/blob/master/img/myimg/gray-concrete-textured-wall.jpg?raw=true);
-  background-size: cover;
-  /* background-color: #f86a05; */
-  text-align: center;
-}
-.headline h1 {
-  padding-top: 100px;
-}
-.headline p {
-  /* text-align: center; */
-  color: #0e111b;
-}
-.headline h1 span {
-  color: #0e111b;
-}
-.headline img {
-  margin-top: 90px;
-}
-
 .aboutme {
+  position: relative;
+  padding: auto;
+}
+.aboutme .work {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+@media (max-width: 1300px) {
+  .aboutme .work {
+    display: block;
+  }
+}
+.aboutme .h11 {
+  max-width: 946.28px;
+  display: block;
+  justify-content: flex-start;
+  align-content: center;
 }
 .aboutme h1 {
   margin-top: 100px;
+  margin-left: 50px;
+  font-size: 50px;
+}
+.aboutme h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  color: #fff;
+}
+.aboutme span {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #c0c0c0;
+}
+.aboutme div {
+  font-family: 'Noto+Sans+KR', sans-serif;
+  font-size: 15px;
+  color: #d3d3d3;
+  line-height: 1.6;
+  font-size: 16px;
+}
+.aboutme .work1 {
+  color: gold;
+  /* text-align: center; */
+  max-width: 500px;
+  max-height: 650px;
+  margin: 20px 20px 20px 20px;
+}
+.aboutme .work1 .work11 {
+  position: relative;
+  padding: 20px 20px 20px 20px;
+  background-color: rgb(55, 55, 55);
+  border-radius: 0.7rem;
+  max-width: 500px;
+  height: 610px;
+}
+.aboutme .work1 .power {
+  /* max-width: 200px;
+  max-height: 200px;
+  border-radius: 20%; */
+  /* background-color: var(--color-area); */
+  /* cursor: pointer; */
+  margin: auto;
+  transition: 0.3s;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.aboutme .power img {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 20%;
+}
+.aboutme .work11 .skills1 {
+  position: absolute;
+  /* padding-top: 43px; */
+  /* top: 0; */
+  bottom: 10px;
+  left: 20px;
+  height: 50px;
+}
+@media (max-width: 600px) {
+  .aboutme .work11 .skills1 {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    height: 50px;
+  }
+  .aboutme .work22 .skills2 {
+    position: absolute;
+    /* padding-top: 68px; */
+    bottom: 10px;
+    left: 20px;
+    height: 50px;
+  }
+}
+.aboutme .work22 .skills2 {
+  position: absolute;
+  /* padding-top: 68px; */
+  bottom: 10px;
+  left: 20px;
+  height: 50px;
+}
+.aboutme .xcode {
+  max-width: 50px;
+  max-height: 50px;
+}
+.aboutme .swift {
+  max-width: 50px;
+  max-height: 50px;
+}
+.aboutme .android {
+  max-width: 50px;
+  max-height: 50px;
+}
+.aboutme .kotlin {
+  max-width: 50px;
+  max-height: 50px;
+}
+.aboutme .html {
+  max-width: 50px;
+  max-height: 50px;
+}
+.aboutme .css {
+  max-width: 50px;
+  max-height: 50px;
+}
+.aboutme .js {
+  max-width: 50px;
+  max-height: 50px;
+}
+.aboutme .ts {
+  max-width: 50px;
+  max-height: 50px;
+}
+.aboutme .react {
+  max-width: 50px;
+  max-height: 50px;
+}
+@media (max-width: 1000px) {
+}
+@media (max-width: 600px) {
+  .aboutme .power img {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 20%;
+  }
+  .aboutme .sanggong img {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 20%;
+    margin-right: 20px;
+  }
+  @media (max-width: 600px) {
+    .aboutme .power img {
+      max-width: 150px;
+      max-height: 150px;
+      border-radius: 20%;
+    }
+    .aboutme .sanggong img {
+      max-width: 100px;
+      max-height: 100px;
+      border-radius: 20%;
+      margin-right: 20px;
+    }
+    .aboutme .xcode {
+      max-width: 50px;
+      max-height: 50px;
+      border-radius: 20%;
+    }
+    .aboutme .swift {
+      /* position: absolute; */
+      max-width: 50px;
+      max-height: 50px;
+      border-radius: 20%;
+      /* top: 10px; */
+    }
+    .aboutme .android {
+      /* position: absolute; */
+      max-height: 50px;
+      border-radius: 10%;
+      top: 10px;
+      left: 135px;
+    }
+    .aboutme .kotlin {
+      /* position: absolute; */
+      max-height: 50px;
+      border-radius: 10%;
+      top: 10px;
+      left: 240.7px;
+    }
+    .aboutme .html {
+      max-width: 50px;
+      max-height: 50px;
+    }
+    .aboutme .css {
+      max-width: 50px;
+      max-height: 50px;
+    }
+    .aboutme .js {
+      max-width: 50px;
+      max-height: 50px;
+    }
+    .aboutme .ts {
+      max-width: 50px;
+      max-height: 50px;
+    }
+    .aboutme .react {
+      max-width: 50px;
+      max-height: 50px;
+    }
+  }
+}
+.aboutme .work2 {
+  color: gold;
+  /* text-align: center; */
+  max-width: 500px;
+  height: 650px;
+  margin: 20px 20px 20px 20px;
+}
+.aboutme .work2 .work22 {
+  position: relative;
+  padding: 20px 20px 20px 20px;
+  background-color: rgb(55, 55, 55);
+  border-radius: 0.7rem;
+  height: 610px;
+}
+.aboutme .work2 .sanggong {
+  /* max-width: 200px; */
+  /* max-height: 200px; */
+  border-radius: 20%;
+  /* background-color: var(--color-area); */
+  /* cursor: pointer; */
+  margin: auto;
+  display: flex;
+  transition: 0.3s;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.aboutme .sanggong img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20%;
+  margin-right: 20px;
+}
+.aboutme .work3 {
+  /* color: gold; */
+  /* text-align: center; */
+  /* max-width: 1000px; */
+  margin: 20px 20px 20px 20px;
+  /* place-content: center; */
+  justify-content: center;
+  align-content: center;
+  display: flex;
+}
+.aboutme .work3 .work33 {
+  /* place-content: center; */
+  max-width: 950px;
+  padding: 20px 20px 20px 20px;
+  background-color: rgb(55, 55, 55);
+  border-radius: 0.7rem;
+}
+@media (max-width: 1300px) {
+  .aboutme .work3 {
+    /* color: gold; */
+    /* text-align: center; */
+    /* max-width: 1000px; */
+    margin: 20px 20px 20px 20px;
+    /* place-content: center; */
+    /* justify-content: center;
+    align-content: center; */
+    display: block;
+  }
+  .aboutme .work3 .work33 {
+    /* place-content: center; */
+    max-width: 460px;
+    padding: 20px 20px 20px 20px;
+    background-color: rgb(55, 55, 55);
+    border-radius: 0.7rem;
+  }
+}
+@media (max-width: 600px) {
+  .aboutme .work3 {
+    /* color: gold; */
+    /* text-align: center; */
+    /* max-width: 1000px; */
+    margin: 20px 20px 20px 20px;
+    /* place-content: center; */
+    /* justify-content: center;
+    align-content: center; */
+    display: block;
+  }
+  .aboutme .work3 .work33 {
+    /* place-content: center; */
+    max-width: 460px;
+    padding: 20px 20px 20px 20px;
+    background-color: rgb(55, 55, 55);
+    border-radius: 0.7rem;
+  }
+}
+.aboutme h1 .skill_tools {
+  font-size: 50px;
+}
+.aboutme .skillLogo {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+@media (max-width: 600px) {
+  .aboutme .skillLogo {
+    display: block;
+  }
+}
+@media (max-width: 1300px) {
+  .aboutme .skillLogo {
+    display: block;
+  }
+}
+.aboutme .front {
+  margin-left: 20px;
+  font-family: 'Noto+Sans+KR', sans-serif;
+  font-size: 20px;
+}
+.aboutme .ap {
+  margin-left: 20px;
+  font-family: 'Noto+Sans+KR', sans-serif;
+  font-size: 20px;
+}
+.aboutme .front_skill {
+  /* display: flex; */
+  justify-content: center;
+  align-content: center;
+  /* margin-left: 20px; */
+  max-width: 500px;
+}
+.aboutme .skillLogo .front {
+  margin-left: 20px;
+  display: flex;
+  width: 500px;
+}
+.aboutme .skillLogo .ap {
+  width: 500px;
+}
+.aboutme .skill .frontend {
+  max-width: 310px;
+  margin: 20px;
+}
+.aboutme .skill .app_skill1 {
+  max-width: 480px;
+  margin: 20px;
+}
+.aboutme .skill .frontend_group {
+  background-color: rgb(55, 55, 55);
+  border-radius: 0.7rem;
+  padding: 20px;
+  height: 50px;
+  max-width: 370px;
+}
+.aboutme .skill .app_group {
+  background-color: rgb(55, 55, 55);
+  border-radius: 0.7rem;
+  padding: 20px;
+  height: 50px;
+  max-width: 220px;
+}
+@media (max-width: 600px) {
+  .aboutme .skill .frontend_group {
+    background-color: rgb(55, 55, 55);
+    border-radius: 0.7rem;
+    padding: 20px;
+    height: 50px;
+    max-width: 270px;
+  }
+  .aboutme .skill .app_group {
+    background-color: rgb(55, 55, 55);
+    border-radius: 0.7rem;
+    padding: 20px;
+    height: 50px;
+    max-width: 220px;
+  }
+}
+
+.project h1 {
+  margin-top: 50px;
+  margin-left: 50px;
+  font-size: 50px;
 }

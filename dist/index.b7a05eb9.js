@@ -759,7 +759,7 @@ class TheHeader extends (0, _jo.Component) {
       <a
         href="#/"
         class="logo">
-        <span>JSH</span>.portfolio
+        <span>JSH</span><span class="logo_span">.portfolio</span>
       </a>
       <nav>
         <ul>
@@ -863,17 +863,20 @@ var _headline = require("../components/Headline");
 var _headlineDefault = parcelHelpers.interopDefault(_headline);
 var _aboutme = require("../components/Aboutme");
 var _aboutmeDefault = parcelHelpers.interopDefault(_aboutme);
+var _project = require("../components/Project");
+var _projectDefault = parcelHelpers.interopDefault(_project);
 class Home extends (0, _jo.Component) {
     render() {
         const headline = new (0, _headlineDefault.default)().el;
         const aboutme = new (0, _aboutmeDefault.default)().el;
+        const project = new (0, _projectDefault.default)().el;
         this.el.classList.add("container");
-        this.el.append(headline, aboutme);
+        this.el.append(headline, aboutme, project);
     }
 }
 exports.default = Home;
 
-},{"../core/jo":"gH9Ow","../components/Headline":"8TN2V","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../components/Aboutme":"6k6h2"}],"8TN2V":[function(require,module,exports) {
+},{"../core/jo":"gH9Ow","../components/Headline":"8TN2V","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../components/Aboutme":"6k6h2","../components/Project":"fODwQ"}],"8TN2V":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jo = require("../core/jo");
@@ -883,10 +886,12 @@ class Headline extends (0, _jo.Component) {
         this.el.innerHTML = /* html */ `
       <h1>
         <span>Front-End</span><br />
-        \u{D504}\u{B860}\u{D2B8}\u{C5D4}\u{B4DC} \u{AC1C}\u{BC1C}\u{C790} \u{C870}\u{C2B9}\u{D658} \u{C785}\u{B2C8}\u{B2E4}.<br />
+        \u{D504}\u{B860}\u{D2B8}\u{C5D4}\u{B4DC} \u{AC1C}\u{BC1C}\u{C790}<br/>
+        \u{C870}\u{C2B9}\u{D658} \u{C785}\u{B2C8}\u{B2E4}.<br />
       </h1>
       <p>
-        \u{C0AC}\u{C6A9}\u{C790}\u{C5D0}\u{AC8C} \u{CD5C}\u{ACE0}\u{C758} \u{ACBD}\u{D5D8}\u{ACFC} \u{D3B8}\u{C758}\u{C131}\u{C744} \u{C81C}\u{ACF5}\u{D560} \u{C218} \u{C788}\u{B294} \u{AC1C}\u{BC1C}\u{C790}\u{B85C} \u{C131}\u{C7A5}\u{D558}\u{ACA0}\u{C2B5}\u{B2C8}\u{B2E4}.
+        \u{C0AC}\u{C6A9}\u{C790}\u{C5D0}\u{AC8C} \u{CD5C}\u{ACE0}\u{C758} \u{ACBD}\u{D5D8}\u{ACFC} \u{D3B8}\u{C758}\u{C131}\u{C744} \u{C81C}\u{ACF5}\u{D560} \u{C218} \u{C788}\u{B294}<br/>
+        \u{AC1C}\u{BC1C}\u{C790}\u{B85C} \u{C131}\u{C7A5}\u{D558}\u{ACA0}\u{C2B5}\u{B2C8}\u{B2E4}.
       </p>
       <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/myimg/jo.png?raw=true" alt="user">
     `;
@@ -902,18 +907,129 @@ class Aboutme extends (0, _jo.Component) {
     render() {
         this.el.classList.add("aboutme");
         this.el.innerHTML = /* html */ `
-      <h1>
-        <span>Front-End</span><br />
-        \u{D504}\u{B860}\u{D2B8}\u{C5D4}\u{B4DC} \u{AC1C}\u{BC1C}\u{C790} \u{C870}\u{C2B9}\u{D658} \u{C785}\u{B2C8}\u{B2E4}.<br />
-      </h1>
-      <p>
-        \u{C0AC}\u{C6A9}\u{C790}\u{C5D0}\u{AC8C} \u{CD5C}\u{ACE0}\u{C758} \u{ACBD}\u{D5D8}\u{ACFC} \u{D3B8}\u{C758}\u{C131}\u{C744} \u{C81C}\u{ACF5}\u{D560} \u{C218} \u{C788}\u{B294} \u{AC1C}\u{BC1C}\u{C790}\u{B85C} \u{C131}\u{C7A5}\u{D558}\u{ACA0}\u{C2B5}\u{B2C8}\u{B2E4}.
-      </p>
-      <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/myimg/jo.png?raw=true" alt="user">
+      <div class="h11">
+        <h1>Work</h1>
+      </div>
+      <div class="work">
+        <div class="work1">
+          <div class="work11">
+            <h3>(\u{C8FC})\u{CC28}\u{D2B8}\u{C5F0}\u{AD6C}\u{C18C}(\u{C571}\u{AC1C}\u{BC1C})</h3>
+            <span>2023.03 ~ 2023.10</span> 
+            <div class="power">
+              <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/projecting/PowerGrphics.png?raw=true" alt="power"/>
+            </div>
+            <div>\u{AC1C}\u{BC1C}\u{D300} IOS\u{D300}</div>
+            <div>(\u{C8FC})\u{CC28}\u{D2B8}\u{C5F0}\u{AD6C}\u{C18C} \u{C5D0}\u{C11C} \u{C9C4}\u{D589}\u{D55C} \u{D504}\u{B85C}\u{C81D}\u{D2B8}</div>
+            <br/>
+            <div>PowerGraphics \u{BAA8}\u{BC14}\u{C77C} \u{C99D}\u{AD8C}\u{CC28}\u{D2B8} \u{C194}\u{B8E8}\u{C158}</div>
+            <div>\u{C81C}\u{AC00} \u{C774} \u{D504}\u{B85C}\u{C81D}\u{D2B8}\u{C5D0} \u{D3EC}\u{C9C0}\u{C158}\u{C740} IOS \u{C804}\u{CCB4}\u{C801}\u{C778} \u{AC83}\u{C744} \u{B2F4}\u{B2F9}\u{D588}\u{C73C}\u{BA70}<br/>
+                \u{AE30}\u{C874} PowerGraphics \u{D504}\u{B85C}\u{ADF8}\u{B7A8}\u{C5D0}\u{C11C} \u{B0A9}\u{D488}\u{B41C} \u{ACF3}\u{C5D0} \u{C720}\u{C9C0}\u{BCF4}\u{C218}\u{B97C} \u{D558}\u{BA74}\u{C11C}<br/>
+                \u{BC84}\u{C83C}\u{C744} \u{C5C5}\u{ADF8}\u{B808}\u{C774}\u{B4DC} \u{D558}\u{C5EC} PowerGraphics ver3 \u{C5D0}\u{C120} \u{B514}\u{C790}\u{C778}\u{ACFC}<br/>
+                \u{C131}\u{B2A5} \u{AE30}\u{B2A5} \u{BAA8}\u{B4E0} \u{AC83}\u{C744} \u{C5C5}\u{ADF8}\u{B808}\u{C774}\u{B4DC} \u{D558}\u{C5EC} <br/>
+                \u{C740}\u{D589}, \u{C99D}\u{AD8C}\u{C0AC} \u{B0A9}\u{D488} \u{C900}\u{BE44}\u{B97C} \u{D588}\u{C2B5}\u{B2C8}\u{B2E4}
+            </div>
+            <div class="skills1">
+              <img class="xcode" src="https://github.com/JoSeungHwan/notepad/blob/master/img/skills/xocde.png?raw=true" alt="xcode">
+              <img class="swift" src="https://github.com/JoSeungHwan/notepad/blob/master/img/skills/swift.png?raw=true" alt="swift">
+            </div>
+          </div>
+        </div>
+
+        <div class="work2">
+          <div class="work22">
+            <h3>\u{C0C1}\u{ACF5}(\u{C571}\u{AC1C}\u{BC1C})</h3>
+            <span>2022.10 ~ 2023.01</span> 
+            <div class="sanggong">
+              <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/projecting/emomain.png?raw=true" alt="sanggong1"/>
+              <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/projecting/sanggong.png?raw=true" alt="sanggong2"/>
+            </div>
+            <div>\u{AC1C}\u{BC1C}\u{D300} \u{C571}\u{AC1C}\u{BC1C}\u{D300}</div>
+            <div>\u{C0C1}\u{ACF5} \u{C5D0}\u{C11C} \u{C9C4}\u{D589}\u{D55C} \u{D504}\u{B85C}\u{C81D}\u{D2B8}</div>
+            <br/>
+            <div>\u{C774}\u{BAA8}\u{B9CC}\u{C138}, \u{D558}\u{C774}\u{BE0C}\u{B9AC}\u{B4DC}\u{C571}</div>
+            <div>\u{C81C}\u{AC00} \u{C774} \u{D504}\u{B85C}\u{C81D}\u{D2B8}\u{C5D0} \u{D3EC}\u{C9C0}\u{C158}\u{C740} \u{C571}\u{AC1C}\u{BC1C} \u{C804}\u{CCB4}\u{C801}\u{C778} \u{AC83}\u{C744} \u{B2F4}\u{B2F9}\u{D588}\u{C73C}\u{BA70}<br/>
+                \u{C774}\u{BAA8}\u{B9CC}\u{C138}\u{C5D0}\u{C11C} IOS\u{D504}\u{B860}\u{D2B8}\u{C5D4}\u{B4DC}\u{C640} \u{B370}\u{C774}\u{D130}\u{AD00}\u{B9AC}<br/>
+                \u{D558}\u{C774}\u{BE0C}\u{B9AC}\u{B4DC}\u{C571}\u{C5D0}\u{C11C} Andriod, IOS \u{C571}\u{AC1C}\u{BC1C} \u{BAA8}\u{B4E0}\u{AC83}\u{C744} \u{B2F4}\u{B2F9}\u{D558}\u{C600}\u{C73C}\u{BA70}<br/>
+                \u{ACE0}\u{AC1D}\u{C0AC} \u{D53C}\u{B4DC}\u{BC37}\u{C744} \u{BC1B}\u{C544} \u{C720}\u{C9C0}\u{BCF4}\u{C218}\u{D558}\u{BA70} \u{C571}\u{C744} \u{CD9C}\u{C2DC}\u{D588}\u{C2B5}\u{B2C8}\u{B2E4}
+            </div>
+            <div class="skills2">
+              <img class="xcode" src="https://github.com/JoSeungHwan/notepad/blob/master/img/skills/xocde.png?raw=true" alt="xcode">
+              <img class="swift" src="https://github.com/JoSeungHwan/notepad/blob/master/img/skills/swift.png?raw=true" alt="swift">
+              <img class="android" src="https://github.com/JoSeungHwan/notepad/blob/master/img/skills/androidstudio.png?raw=true" alt="android">
+              <img class="kotlin" src="https://github.com/JoSeungHwan/notepad/blob/master/img/skills/kotlin.png?raw=true" alt="kotlin">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="work3">
+        <div class="work33">
+          <h2>\u{BE44}\u{AC1C}\u{BC1C}</h2>
+          <h3>(\u{C8FC})ACT(\u{BE44}\u{AC1C}\u{BC1C})</h3>
+          <span>2019.11 ~ 2021.03</span>
+          <br/>
+          <br/>
+          <h3>(\u{C8FC})\u{B098}\u{C774}\u{C2A4}\u{C528}\u{C5E0}\u{C5D0}\u{C2A4}(\u{BE44}\u{AC1C}\u{BC1C})</h3>
+          <span>2018.04 ~ 2019.11</span>
+          <br/>
+          <br/>
+          <h3>LG\u{C774}\u{B178}\u{D14D}(\u{BE44}\u{AC1C}\u{BC1C})</h3>
+          <span>2016.07 ~ 2016.11(\u{ACC4}\u{C57D}\u{C9C1}\u{ADFC}\u{BB34})</span>
+        </div>
+      </div> -->
+
+      <div class="">
+        <h1 class="skill_tools">Skill & Tools</h1>
+      </div>
+
+      <div class="skill">
+        <div class="skillLogo">
+          <div class="front_skill">
+            <div class="front">Front-end</div>
+            <div class="frontend">
+              <div class="frontend_group">
+                <img class="html" src="https://github.com/JoSeungHwan/notepad/blob/master/img/skills/html.png?raw=true" alt="html">
+                <img class="css" src="https://github.com/JoSeungHwan/notepad/blob/master/img/skills/css.png?raw=true" alt="css">
+                <img class="js" src="https://github.com/JoSeungHwan/notepad/blob/master/img/skills/js.png?raw=true" alt="js">
+                <img class="ts" src="https://github.com/JoSeungHwan/notepad/blob/master/img/skills/ts.png?raw=true" alt="ts">
+                <img class="react" src="https://github.com/JoSeungHwan/notepad/blob/master/img/skills/react.png?raw=true" alt="react">
+              </div>
+            </div>
+          </div>
+          <div class="app_skill">
+            <div class="ap">App</div>
+            <div class="app_skill1">
+              <div class="app_group">
+                <img class="xcode" src="https://github.com/JoSeungHwan/notepad/blob/master/img/skills/xocde.png?raw=true" alt="xcode">
+                <img class="swift" src="https://github.com/JoSeungHwan/notepad/blob/master/img/skills/swift.png?raw=true" alt="swift">
+                <img class="android" src="https://github.com/JoSeungHwan/notepad/blob/master/img/skills/androidstudio.png?raw=true" alt="android">
+                <img class="kotlin" src="https://github.com/JoSeungHwan/notepad/blob/master/img/skills/kotlin.png?raw=true" alt="kotlin">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     `;
     }
 }
 exports.default = Aboutme;
+
+},{"../core/jo":"gH9Ow","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"fODwQ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jo = require("../core/jo");
+class Project extends (0, _jo.Component) {
+    render() {
+        this.el.classList.add("project");
+        this.el.innerHTML = /* html */ `
+      <h1>Project</h1>
+      <div>App</div>
+      <div>Front-end</div>
+
+    `;
+    }
+}
+exports.default = Project;
 
 },{"../core/jo":"gH9Ow","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cdAjJ":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");

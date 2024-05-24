@@ -39,7 +39,7 @@ export default class TheHeader extends Component {
       <a
         href="#/"
         class="logo">
-        <span>JSH</span>.portfolio
+        <span>JSH</span><span class="logo_span">.portfolio</span>
       </a>
       <nav>
         <ul>

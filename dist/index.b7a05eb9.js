@@ -904,7 +904,7 @@ exports.default = Headline;
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jo = require("../core/jo");
-var _all = require("gsap/all");
+var _gsap = require("gsap");
 var _scrollmagic = require("scrollmagic");
 class Aboutme extends (0, _jo.Component) {
     render() {
@@ -1009,7 +1009,7 @@ class Aboutme extends (0, _jo.Component) {
         const workEls = this.el.querySelector(".work");
         const skillEls = this.el.querySelector(".skill");
         var controller = new _scrollmagic.Controller();
-        var setMultipleClasses = (0, _all.TweenMax).to(".work", {
+        var setMultipleClasses = (0, _gsap.TweenMax).to(".work", {
             className: "show"
         });
         var scene = new _scrollmagic.Scene({
@@ -1034,7 +1034,7 @@ class Aboutme extends (0, _jo.Component) {
 }
 exports.default = Aboutme;
 
-},{"../core/jo":"gH9Ow","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","scrollmagic":"1y1Qx","gsap/all":"3UJRo"}],"1y1Qx":[function(require,module,exports) {
+},{"../core/jo":"gH9Ow","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","scrollmagic":"1y1Qx","gsap":"fPSuC"}],"1y1Qx":[function(require,module,exports) {
 /*!
  * ScrollMagic v2.0.8 (2020-08-14)
  * The javascript library for magical scroll interactions.
@@ -3350,9 +3350,13 @@ exports.default = Aboutme;
     return ScrollMagic;
 });
 
-},{}],"3UJRo":[function(require,module,exports) {
+},{}],"fPSuC":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "gsap", ()=>gsapWithCSS);
+parcelHelpers.export(exports, "default", ()=>gsapWithCSS);
+parcelHelpers.export(exports, "CSSPlugin", ()=>(0, _csspluginJs.CSSPlugin));
+parcelHelpers.export(exports, "TweenMax", ()=>TweenMaxWithCSS);
 parcelHelpers.export(exports, "TweenLite", ()=>(0, _gsapCoreJs.TweenLite));
 parcelHelpers.export(exports, "TimelineMax", ()=>(0, _gsapCoreJs.TimelineMax));
 parcelHelpers.export(exports, "TimelineLite", ()=>(0, _gsapCoreJs.TimelineLite));
@@ -3374,70 +3378,12 @@ parcelHelpers.export(exports, "Bounce", ()=>(0, _gsapCoreJs.Bounce));
 parcelHelpers.export(exports, "Sine", ()=>(0, _gsapCoreJs.Sine));
 parcelHelpers.export(exports, "Expo", ()=>(0, _gsapCoreJs.Expo));
 parcelHelpers.export(exports, "Circ", ()=>(0, _gsapCoreJs.Circ));
-parcelHelpers.export(exports, "wrap", ()=>(0, _gsapCoreJs.wrap));
-parcelHelpers.export(exports, "wrapYoyo", ()=>(0, _gsapCoreJs.wrapYoyo));
-parcelHelpers.export(exports, "distribute", ()=>(0, _gsapCoreJs.distribute));
-parcelHelpers.export(exports, "random", ()=>(0, _gsapCoreJs.random));
-parcelHelpers.export(exports, "snap", ()=>(0, _gsapCoreJs.snap));
-parcelHelpers.export(exports, "normalize", ()=>(0, _gsapCoreJs.normalize));
-parcelHelpers.export(exports, "getUnit", ()=>(0, _gsapCoreJs.getUnit));
-parcelHelpers.export(exports, "clamp", ()=>(0, _gsapCoreJs.clamp));
-parcelHelpers.export(exports, "splitColor", ()=>(0, _gsapCoreJs.splitColor));
-parcelHelpers.export(exports, "toArray", ()=>(0, _gsapCoreJs.toArray));
-parcelHelpers.export(exports, "mapRange", ()=>(0, _gsapCoreJs.mapRange));
-parcelHelpers.export(exports, "pipe", ()=>(0, _gsapCoreJs.pipe));
-parcelHelpers.export(exports, "unitize", ()=>(0, _gsapCoreJs.unitize));
-parcelHelpers.export(exports, "interpolate", ()=>(0, _gsapCoreJs.interpolate));
-parcelHelpers.export(exports, "shuffle", ()=>(0, _gsapCoreJs.shuffle));
-parcelHelpers.export(exports, "selector", ()=>(0, _gsapCoreJs.selector));
-parcelHelpers.export(exports, "gsap", ()=>gsapWithCSS);
-parcelHelpers.export(exports, "default", ()=>gsapWithCSS);
-parcelHelpers.export(exports, "TweenMax", ()=>TweenMaxWithCSS);
-parcelHelpers.export(exports, "CSSPlugin", ()=>(0, _csspluginJsDefault.default));
 var _gsapCoreJs = require("./gsap-core.js");
-var _gsapCoreJsDefault = parcelHelpers.interopDefault(_gsapCoreJs);
 var _csspluginJs = require("./CSSPlugin.js");
-var _csspluginJsDefault = parcelHelpers.interopDefault(_csspluginJs);
-var _customEaseJs = require("./CustomEase.js");
-parcelHelpers.exportAll(_customEaseJs, exports);
-var _draggableJs = require("./Draggable.js");
-parcelHelpers.exportAll(_draggableJs, exports);
-var _cssrulePluginJs = require("./CSSRulePlugin.js");
-parcelHelpers.exportAll(_cssrulePluginJs, exports);
-var _easelPluginJs = require("./EaselPlugin.js");
-parcelHelpers.exportAll(_easelPluginJs, exports);
-var _easePackJs = require("./EasePack.js");
-parcelHelpers.exportAll(_easePackJs, exports);
-var _flipJs = require("./Flip.js");
-parcelHelpers.exportAll(_flipJs, exports);
-var _motionPathPluginJs = require("./MotionPathPlugin.js");
-parcelHelpers.exportAll(_motionPathPluginJs, exports);
-var _observerJs = require("./Observer.js");
-parcelHelpers.exportAll(_observerJs, exports);
-var _pixiPluginJs = require("./PixiPlugin.js");
-parcelHelpers.exportAll(_pixiPluginJs, exports);
-var _scrollToPluginJs = require("./ScrollToPlugin.js");
-parcelHelpers.exportAll(_scrollToPluginJs, exports);
-var _scrollTriggerJs = require("./ScrollTrigger.js");
-parcelHelpers.exportAll(_scrollTriggerJs, exports);
-var _textPluginJs = require("./TextPlugin.js"); //BONUS EXPORTS
- // export * from "./DrawSVGPlugin.js";
- // export * from "./Physics2DPlugin.js";
- // export * from "./PhysicsPropsPlugin.js";
- // export * from "./ScrambleTextPlugin.js";
- // export * from "./CustomBounce.js";
- // export * from "./CustomWiggle.js";
- // export * from "./GSDevTools.js";
- // export * from "./InertiaPlugin.js";
- // export * from "./MorphSVGPlugin.js";
- // export * from "./MotionPathHelper.js";
- // export * from "./ScrollSmoother.js";
- // export * from "./SplitText.js";
-parcelHelpers.exportAll(_textPluginJs, exports);
-var gsapWithCSS = (0, _gsapCoreJsDefault.default).registerPlugin((0, _csspluginJsDefault.default)) || (0, _gsapCoreJsDefault.default), // to protect from tree shaking
+var gsapWithCSS = (0, _gsapCoreJs.gsap).registerPlugin((0, _csspluginJs.CSSPlugin)) || (0, _gsapCoreJs.gsap), // to protect from tree shaking
 TweenMaxWithCSS = gsapWithCSS.core.Tween;
 
-},{"./gsap-core.js":"05eeC","./CSSPlugin.js":"l02JQ","./CustomEase.js":false,"./Draggable.js":false,"./CSSRulePlugin.js":false,"./EaselPlugin.js":false,"./EasePack.js":false,"./Flip.js":false,"./MotionPathPlugin.js":false,"./Observer.js":false,"./PixiPlugin.js":false,"./ScrollToPlugin.js":false,"./ScrollTrigger.js":false,"./TextPlugin.js":false,"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"05eeC":[function(require,module,exports) {
+},{"./gsap-core.js":"05eeC","./CSSPlugin.js":"l02JQ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"05eeC":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "GSCache", ()=>GSCache);
@@ -7432,7 +7378,7 @@ var CSSPlugin = {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jo = require("../core/jo");
-var _all = require("gsap/all");
+var _gsap = require("gsap");
 var _scrollmagic = require("scrollmagic");
 class Project extends (0, _jo.Component) {
     render() {
@@ -7567,7 +7513,7 @@ class Project extends (0, _jo.Component) {
         const btnEls = this.el.querySelector(".projectbtn");
         const projectEls = this.el.querySelector(".project_project");
         var controller = new _scrollmagic.Controller();
-        var setMultipleClasses = (0, _all.TweenMax).to(".projectbtn", {
+        var setMultipleClasses = (0, _gsap.TweenMax).to(".projectbtn", {
             className: "show"
         });
         var scene = new _scrollmagic.Scene({
@@ -7592,7 +7538,7 @@ class Project extends (0, _jo.Component) {
 }
 exports.default = Project;
 
-},{"../core/jo":"gH9Ow","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","gsap/all":"3UJRo","scrollmagic":"1y1Qx"}],"cdAjJ":[function(require,module,exports) {
+},{"../core/jo":"gH9Ow","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","scrollmagic":"1y1Qx","gsap":"fPSuC"}],"cdAjJ":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jo = require("../core/jo");

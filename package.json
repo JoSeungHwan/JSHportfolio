@@ -2,16 +2,17 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "dev": "parcel ./index.html",
-    "build": "parcel build ./index.html"
+    "build": "parcel build ./index.html",
+    "vercel": "vercel dev"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "gsap": "^3.12.5",
+    "node-fetch": "^3.3.2",
     "parcel": "^2.12.0",
     "scrollmagic": "^2.0.8",
     "scrollmagic-plugins": "^1.0.8",

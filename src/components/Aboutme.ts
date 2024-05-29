@@ -1,9 +1,10 @@
 import { Component } from '../core/jo';
 import {
   // gsap,
-  ScrollTrigger,
-  Draggable,
-  MotionPathPlugin,
+  // ScrollTrigger,
+  // Draggable,
+  // MotionPathPlugin,
+  // ScrollToPlugin,
   Power0,
   Power1,
   Power2,
@@ -26,11 +27,17 @@ import {
   TimelineLite,
   TimelineMax,
   TweenMax,
+} from 'gsap';
+import {
+  gsap,
+  ScrollTrigger,
+  Draggable,
+  MotionPathPlugin,
+  ScrollToPlugin,
 } from 'gsap/all';
 import * as ScrollMagic from 'scrollmagic';
-import { ScrollToPlugin } from 'gsap/all';
-import { ScrollMagicPluginIndicator } from 'scrollmagic-plugins';
-import { ScrollMagicPluginGsap } from 'scrollmagic-plugin-gsap';
+// import { ScrollMagicPluginIndicator } from 'scrollmagic-plugins';
+// import { ScrollMagicPluginGsap } from 'scrollmagic-plugin-gsap';
 
 export default class Aboutme extends Component {
   render() {

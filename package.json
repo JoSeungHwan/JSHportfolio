@@ -11,7 +11,15 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gsap": "^3.12.5",
     "parcel": "^2.12.0",
+    "scrollmagic": "^2.0.8",
+    "scrollmagic-plugins": "^1.0.8",
     "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@swup/scroll-plugin": "^3.3.2",
+    "@types/scrollmagic": "^2.0.8",
+    "scrollmagic-plugin-gsap": "^1.0.3"
   }
 }

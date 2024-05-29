@@ -1,4 +1,36 @@
 import { Component } from '../core/jo';
+import {
+  // gsap,
+  ScrollTrigger,
+  Draggable,
+  MotionPathPlugin,
+  Power0,
+  Power1,
+  Power2,
+  Power3,
+  Power4,
+  Linear,
+  Quad,
+  Cubic,
+  Quart,
+  Quint,
+  Strong,
+  Elastic,
+  Back,
+  SteppedEase,
+  Bounce,
+  Sine,
+  Expo,
+  Circ,
+  TweenLite,
+  TimelineLite,
+  TimelineMax,
+  TweenMax,
+} from 'gsap/all';
+import * as ScrollMagic from 'scrollmagic';
+import { ScrollToPlugin } from 'gsap/all';
+import { ScrollMagicPluginIndicator } from 'scrollmagic-plugins';
+import { ScrollMagicPluginGsap } from 'scrollmagic-plugin-gsap';
 
 export default class Aboutme extends Component {
   render() {
@@ -8,7 +40,7 @@ export default class Aboutme extends Component {
         <h1>Work</h1>
       </div>
       <div class="work">
-        <div class="work1">
+        <div class="work1 back-to-position to-right delay-0"> 
           <div class="work11">
             <h3>(주)차트연구소(앱개발)</h3>
             <span>2023.03 ~ 2023.10</span> 
@@ -32,7 +64,7 @@ export default class Aboutme extends Component {
           </div>
         </div>
 
-        <div class="work2">
+        <div class="work2 back-to-position to-left delay-1">
           <div class="work22">
             <h3>상공(앱개발)</h3>
             <span>2022.10 ~ 2023.01</span> 
@@ -59,29 +91,13 @@ export default class Aboutme extends Component {
         </div>
       </div>
 
-      <!-- <div class="work3">
-        <div class="work33">
-          <h2>비개발</h2>
-          <h3>(주)ACT(비개발)</h3>
-          <span>2019.11 ~ 2021.03</span>
-          <br/>
-          <br/>
-          <h3>(주)나이스씨엠에스(비개발)</h3>
-          <span>2018.04 ~ 2019.11</span>
-          <br/>
-          <br/>
-          <h3>LG이노텍(비개발)</h3>
-          <span>2016.07 ~ 2016.11(계약직근무)</span>
-        </div>
-      </div> -->
-
       <div class="">
         <h1 class="skill_tools">Skill & Tools</h1>
       </div>
 
       <div class="skill">
         <div class="skillLogo">
-          <div class="front_skill">
+          <div class="front_skill back-to-position to-right delay-0">
             <div class="front">Front-end</div>
             <div class="frontend">
               <div class="frontend_group">
@@ -93,7 +109,7 @@ export default class Aboutme extends Component {
               </div>
             </div>
           </div>
-          <div class="app_skill">
+          <div class="app_skill back-to-position to-right delay-0">
             <div class="ap">App</div>
             <div class="app_skill1">
               <div class="app_group">
@@ -104,8 +120,45 @@ export default class Aboutme extends Component {
               </div>
             </div>
           </div>
+          <div class="cooperation_skill back-to-position to-left delay-0">
+            <div class="cooperation">Cooperation</div>
+            <div class="cooperation_skill1">
+              <div class="cooperation_group">
+                <img class="github" src="https://github.com/JoSeungHwan/notepad/blob/master/img/skills/github.png?raw=true" alt="github">
+                <img class="notion" src="https://github.com/JoSeungHwan/notepad/blob/master/img/skills/notion.png?raw=true" alt="notion">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     `;
+
+    const workEls = this.el.querySelector('.work');
+    const skillEls = this.el.querySelector('.skill');
+    var controller = new ScrollMagic.Controller();
+    var setMultipleClasses = TweenMax.to('.work', {
+      className: 'show',
+    });
+    var scene = new ScrollMagic.Scene({
+      // duration: 100,
+      // offset: 200,
+      triggerElement: workEls,
+      triggerHook: 0.8,
+      // reverse: false,
+    });
+    scene.setClassToggle(workEls, 'show');
+    // scene.setTween(setMultipleClasses);
+    scene.addTo(controller);
+
+    var scene = new ScrollMagic.Scene({
+      // duration: 100,
+      // offset: 200,
+      triggerElement: skillEls,
+      triggerHook: 0.8,
+      // reverse: false,
+    });
+    scene.setClassToggle(skillEls, 'show');
+    // scene.setTween(setMultipleClasses);
+    scene.addTo(controller);
   }
 }

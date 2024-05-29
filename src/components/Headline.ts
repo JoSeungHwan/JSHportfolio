@@ -14,6 +14,7 @@ export default class Headline extends Component {
         개발자로 성장하겠습니다.
       </p>
       <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/myimg/jo.png?raw=true" alt="user">
+      <!-- <img src="" href=".../img/jo.png" alt="user">  -->
     `;
   }
 }

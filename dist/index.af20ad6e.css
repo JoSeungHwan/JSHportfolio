@@ -105,6 +105,48 @@ body {
   }
 }
 
+.back-to-position {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.back-to-position.to-right {
+  transform: translateX(-150px);
+}
+
+.back-to-position.to-left {
+  transform: translateX(150px);
+}
+
+.back-to-position.to-top {
+  transform: translateY(-150px);
+}
+
+.back-to-position.to-bottom {
+  transform: translateY(150px);
+}
+
+.show .back-to-position {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.show .back-to-position.delay-0 {
+  transition-delay: 0s;
+}
+
+.show .back-to-position.delay-1 {
+  transition-delay: .3s;
+}
+
+.show .back-to-position.delay-2 {
+  transition-delay: .6s;
+}
+
+.show .back-to-position.delay-3 {
+  transition-delay: .9s;
+}
+
 header {
   z-index: 9;
   align-items: flex-end;
@@ -306,8 +348,15 @@ footer a:hover {
   display: flex;
 }
 
-@media (width <= 1300px) {
+@media (width <= 1000px) {
+  .aboutme {
+    padding: auto;
+    position: relative;
+  }
+
   .aboutme .work {
+    max-width: 540px;
+    margin: 0 auto;
     display: block;
   }
 }
@@ -328,18 +377,21 @@ footer a:hover {
   color: #fff;
   font-family: Roboto, sans-serif;
   font-size: 25px;
+  font-weight: 700;
 }
 
 .aboutme span {
   color: silver;
   font-family: Roboto, sans-serif;
   font-size: 15px;
+  font-weight: 600;
 }
 
 .aboutme div {
   color: #d3d3d3;
   font-family: "Noto+Sans+KR", sans-serif;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.6;
 }
 
@@ -393,7 +445,7 @@ footer a:hover {
   left: 20px;
 }
 
-.aboutme .xcode, .aboutme .swift, .aboutme .android, .aboutme .kotlin, .aboutme .html, .aboutme .css, .aboutme .js, .aboutme .ts, .aboutme .react {
+.aboutme .xcode, .aboutme .swift, .aboutme .android, .aboutme .kotlin, .aboutme .html, .aboutme .css, .aboutme .js, .aboutme .ts, .aboutme .react, .aboutme .github, .aboutme .notion {
   max-width: 50px;
   max-height: 50px;
 }
@@ -446,7 +498,7 @@ footer a:hover {
       left: 240.7px;
     }
 
-    .aboutme .html, .aboutme .css, .aboutme .js, .aboutme .ts, .aboutme .react {
+    .aboutme .html, .aboutme .css, .aboutme .js, .aboutme .ts, .aboutme .react, .aboutme .github, .aboutme .notion {
       max-width: 50px;
       max-height: 50px;
     }
@@ -538,13 +590,13 @@ footer a:hover {
   }
 }
 
-@media (width <= 1300px) {
+@media (width <= 1100px) {
   .aboutme .skillLogo {
     display: block;
   }
 }
 
-.aboutme .front, .aboutme .ap {
+.aboutme .front, .aboutme .ap, .aboutme .cooperation {
   margin-left: 20px;
   font-family: "Noto+Sans+KR", sans-serif;
   font-size: 20px;
@@ -552,17 +604,15 @@ footer a:hover {
 
 .aboutme .front_skill {
   place-content: center;
-  max-width: 500px;
 }
 
-.aboutme .skillLogo .front {
-  width: 500px;
+.aboutme .skillLogo .front, .aboutme .skillLogo .ap, .aboutme .skillLogo .cooperation {
   margin-left: 20px;
   display: flex;
 }
 
-.aboutme .skillLogo .ap {
-  width: 500px;
+.aboutme .skill {
+  margin: 0 auto;
 }
 
 .aboutme .skill .frontend {
@@ -571,6 +621,11 @@ footer a:hover {
 }
 
 .aboutme .skill .app_skill1 {
+  width: 460px;
+  margin: 20px;
+}
+
+.aboutme .skill .cooperation_skill1 {
   max-width: 480px;
   margin: 20px;
 }
@@ -591,6 +646,14 @@ footer a:hover {
   padding: 20px;
 }
 
+.aboutme .skill .cooperation_group {
+  background-color: #373737;
+  border-radius: .7rem;
+  max-width: 110px;
+  height: 50px;
+  padding: 20px;
+}
+
 @media (width <= 600px) {
   .aboutme .skill .frontend_group {
     background-color: #373737;
@@ -607,11 +670,193 @@ footer a:hover {
     height: 50px;
     padding: 20px;
   }
+
+  .aboutme .skill .cooperation_group {
+    background-color: #373737;
+    border-radius: .7rem;
+    max-width: 110px;
+    height: 50px;
+    padding: 20px;
+  }
 }
 
 .project h1 {
   margin-top: 50px;
   margin-left: 50px;
   font-size: 50px;
+}
+
+.project h2 {
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.project h3 {
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.project .detail {
+  color: #a6a6a6;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.project .span {
+  position: absolute;
+  bottom: 10px;
+}
+
+.project .span span {
+  color: #fff;
+  background-color: #232323;
+  border-radius: .25rem;
+  margin-left: 5px;
+  padding: .25rem .75rem;
+  font-size: .8rem;
+  line-height: 1rem;
+}
+
+.project .projectbtn {
+  max-width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project .projectbtn .projectbtn_in {
+  text-align: center;
+  background-color: #373737;
+  border-radius: 9999px;
+  max-width: 175px;
+  margin: 20px 20px 20px 0;
+  padding: 10px;
+}
+
+.project .projectbtn .projectbtn_in .all, .project .projectbtn .projectbtn_in .web, .project .projectbtn .projectbtn_in .app {
+  color: #fff;
+  background-color: #373737;
+  border: none;
+  border-radius: 9999px;
+  width: 55px;
+  height: 40px;
+}
+
+.project .projectbtn .all.active-button {
+  color: #0e111b;
+  background-color: #fff;
+  border: none;
+  border-radius: 9999px;
+  width: 55px;
+  height: 40px;
+}
+
+.project .projectbtn .all:hover, .project .projectbtn .web:hover, .project .projectbtn .app:hover {
+  background-color: #737373;
+}
+
+.project .projectbtn .all:focus, .project .projectbtn .web:focus, .project .projectbtn .app:focus, .project .projectbtn .all:active, .project .projectbtn .web:active, .project .projectbtn .app:active {
+  color: #0e111b;
+  background-color: #fff;
+}
+
+.project .project_project {
+  max-width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+.project .wrapper {
+  grid-gap: 20px;
+  grid-template-rows: repeat(3, 350px);
+  grid-template-columns: repeat(4, 250px);
+  display: grid;
+}
+
+@media (width <= 1120px) {
+  .project .wrapper {
+    grid-gap: 20px;
+    grid-template-rows: repeat(4, 350px);
+    grid-template-columns: repeat(3, 250px);
+    display: grid;
+  }
+
+  .project .project_project {
+    max-width: 810px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+
+  .project .projectbtn {
+    max-width: 810px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (width <= 850px) {
+  .project .wrapper {
+    grid-gap: 20px;
+    grid-template-rows: repeat(5, 350px);
+    grid-template-columns: repeat(2, 250px);
+    display: grid;
+  }
+
+  .project .project_project {
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+
+  .project .projectbtn {
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (width <= 580px) {
+  .project .wrapper {
+    grid-gap: 20px;
+    grid-template-rows: repeat(10, 350px);
+    grid-template-columns: repeat(1, 250px);
+    display: grid;
+  }
+
+  .project .project_project {
+    max-width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+
+  .project .projectbtn {
+    max-width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.project .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten {
+  background-color: #373737;
+  border-radius: .3rem;
+  max-width: 230px;
+  max-height: 330px;
+  padding: 10px;
+  line-height: 1.5;
+  position: relative;
+}
+
+.project img {
+  border-radius: .7rem;
+  width: 230px;
+  height: 150px;
 }
 /*# sourceMappingURL=index.af20ad6e.css.map */

@@ -1009,7 +1009,7 @@ class Aboutme extends (0, _jo.Component) {
         const workEls = this.el.querySelector(".work");
         const skillEls = this.el.querySelector(".skill");
         var controller = new _scrollmagic.Controller();
-        var setMultipleClasses = (0, _gsap.TweenMax).to(".work", {
+        var setMultipleClasses = (0, _gsap.TweenMax).to(".work", 0.5, {
             className: "show"
         });
         var scene = new _scrollmagic.Scene({
@@ -7513,7 +7513,7 @@ class Project extends (0, _jo.Component) {
         const btnEls = this.el.querySelector(".projectbtn");
         const projectEls = this.el.querySelector(".project_project");
         var controller = new _scrollmagic.Controller();
-        var setMultipleClasses = (0, _gsap.TweenMax).to(".projectbtn", {
+        var setMultipleClasses = (0, _gsap.TweenMax).to(".projectbtn", 0.5, {
             className: "show"
         });
         var scene = new _scrollmagic.Scene({

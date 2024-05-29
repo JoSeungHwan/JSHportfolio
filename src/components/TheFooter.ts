@@ -11,7 +11,7 @@ export default class TheFooter extends Component {
     const { github, repository } = aboutStore.state;
     this.el.innerHTML = /* html */ `
       <div>
-        <a href="https://github.com/JoSeungHwan/JoMovie-App">
+        <a href="https://github.com/JoSeungHwan/JSHportfolio">
           GitHub Repository.
         </a>
       </div>

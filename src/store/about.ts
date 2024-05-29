@@ -17,5 +17,5 @@ export default new Store<State>({
   Notion:
     'https://www.notion.so/IOS-Developer-e65fa672d22e45d3885e09503206a495?pvs=4',
   github: 'https://github.com/JoSeungHwan',
-  repository: 'https://github.com/JoSeungHwan/-vanillajs-movie-app',
+  repository: 'https://github.com/JoSeungHwan/JSHportfolio',
 });

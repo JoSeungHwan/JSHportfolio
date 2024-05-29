@@ -802,7 +802,7 @@ class TheFooter extends (0, _jo.Component) {
         const { github, repository } = (0, _aboutDefault.default).state;
         this.el.innerHTML = /* html */ `
       <div>
-        <a href="https://github.com/JoSeungHwan/JoMovie-App">
+        <a href="https://github.com/JoSeungHwan/JSHportfolio">
           GitHub Repository.
         </a>
       </div>
@@ -827,7 +827,7 @@ exports.default = new (0, _jo.Store)({
     email: "swcc321@naver.com",
     Notion: "https://www.notion.so/IOS-Developer-e65fa672d22e45d3885e09503206a495?pvs=4",
     github: "https://github.com/JoSeungHwan",
-    repository: "https://github.com/JoSeungHwan/-vanillajs-movie-app"
+    repository: "https://github.com/JoSeungHwan/JSHportfolio"
 });
 
 },{"../core/jo":"gH9Ow","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kvHxr":[function(require,module,exports) {

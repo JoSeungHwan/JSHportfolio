@@ -176,9 +176,9 @@ export default class Project extends Component {
 
     var controller = new ScrollMagic.Controller();
 
-    var setMultipleClasses = TweenMax.to('.projectbtn', 0.5, {
-      className: 'show',
-    });
+    // var setMultipleClasses = TweenMax.to('.projectbtn', 0.5, {
+    //   className: 'show',
+    // });
     var scene = new ScrollMagic.Scene({
       // duration: 100,
       // offset: 200,

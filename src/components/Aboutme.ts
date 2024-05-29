@@ -138,9 +138,9 @@ export default class Aboutme extends Component {
     const workEls = this.el.querySelector('.work');
     const skillEls = this.el.querySelector('.skill');
     var controller = new ScrollMagic.Controller();
-    var setMultipleClasses = TweenMax.to('.work', 0.5, {
-      className: 'show',
-    });
+    // var setMultipleClasses = TweenMax.to('.work', 0.5, {
+    //   className: 'show',
+    // });
     var scene = new ScrollMagic.Scene({
       // duration: 100,
       // offset: 200,

@@ -16,7 +16,8 @@
     "parcel": "^2.12.0",
     "scrollmagic": "^2.0.8",
     "scrollmagic-plugins": "^1.0.8",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "vercel": "^34.2.3"
   },
   "dependencies": {
     "@swup/scroll-plugin": "^3.3.2",

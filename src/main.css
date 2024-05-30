@@ -250,14 +250,18 @@ footer a:hover {
 .headline {
   margin-bottom: 40px;
   position: sticky;
-  min-height: 100vh;
-  /* min-height: -webkit-fill-available; */
-  width: 100%;
+  min-width: 100%;
   margin: -70px auto;
   background-image: url(https://github.com/JoSeungHwan/notepad/blob/master/img/myimg/gray-concrete-textured-wall.jpg?raw=true);
   background-size: cover;
   /* background-color: #f86a05; */
   text-align: center;
+}
+.headline {
+  min-height: 100vh;
+  @supports (-webkit-touch-callout: none) {
+    min-height: -webkit-fill-available;
+  }
 }
 .headline h1 {
   font-family: 'Oswald', sans-serif;

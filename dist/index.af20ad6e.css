@@ -245,10 +245,19 @@ footer a:hover {
   text-align: center;
   background-image: url("https://github.com/JoSeungHwan/notepad/blob/master/img/myimg/gray-concrete-textured-wall.jpg?raw=true");
   background-size: cover;
-  width: 100%;
-  min-height: 100vh;
+  min-width: 100%;
   margin: -70px auto;
   position: sticky;
+}
+
+.headline {
+  min-height: 100vh;
+
+  @supports (-webkit-touch-callout: none) {
+    & {
+      min-height: -webkit-fill-available;
+    }
+  }
 }
 
 .headline h1 {

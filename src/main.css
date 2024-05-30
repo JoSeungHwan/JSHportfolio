@@ -250,9 +250,8 @@ footer a:hover {
 .headline {
   margin-bottom: 40px;
   position: sticky;
-  height: 100vh;
-  height: -webkit-fill-available;
-  height: fill-available;
+  min-height: 100vh;
+  /* min-height: -webkit-fill-available; */
   width: 100%;
   margin: -70px auto;
   background-image: url(https://github.com/JoSeungHwan/notepad/blob/master/img/myimg/gray-concrete-textured-wall.jpg?raw=true);
@@ -832,12 +831,12 @@ footer a:hover {
   border-radius: 0.25rem;
   margin-left: 5px;
 }
-.project .projectbtn {
+.project .project_btn {
   max-width: 1060px;
   margin-left: auto;
   margin-right: auto;
 }
-.project .projectbtn .projectbtn_in {
+.project .project_btn_in {
   background-color: rgb(55, 55, 55);
   max-width: 175px;
   text-align: center;
@@ -845,9 +844,9 @@ footer a:hover {
   padding: 10px;
   margin: 20px 20px 20px 0;
 }
-.project .projectbtn .projectbtn_in .all,
-.project .projectbtn .projectbtn_in .web,
-.project .projectbtn .projectbtn_in .app {
+.project .project_btn_in .all,
+.project .project_btn_in .web,
+.project .project_btn_in .app {
   background-color: rgb(55, 55, 55);
   width: 55px;
   height: 40px;
@@ -855,7 +854,7 @@ footer a:hover {
   border: none;
   color: #fff;
 }
-.project .projectbtn .all.active-button {
+.project .project_btn_in .all.active-button {
   width: 55px;
   height: 40px;
   border-radius: 9999px;
@@ -863,87 +862,287 @@ footer a:hover {
   background-color: #fff;
   color: #0e111b;
 }
-.project .projectbtn .all:hover,
-.project .projectbtn .web:hover,
-.project .projectbtn .app:hover {
+.project .project_btn_in .all:hover,
+.project .project_btn_in .web:hover,
+.project .project_btn_in .app:hover {
   background-color: rgb(115, 115, 115);
 }
-.project .projectbtn .all:focus,
-.project .projectbtn .web:focus,
-.project .projectbtn .app:focus {
+.project .project_btn_in .all:focus,
+.project .project_btn_in .web:focus,
+.project .project_btn_in .app:focus {
   background-color: #fff;
   color: #0e111b;
 }
-.project .projectbtn .all:active,
-.project .projectbtn .web:active,
-.project .projectbtn .app:active {
+.project .project_btn_in .all:active,
+.project .project_btn_in .web:active,
+.project .project_btn_in .app:active {
   background-color: #fff;
   color: #0e111b;
 }
+
 .project .project_project {
+  display: none;
   max-width: 1060px;
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
 }
-.project .wrapper {
+.project .project_project_web {
+  display: none;
+  max-width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+.project .project_project_app {
+  display: none;
+  max-width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+.project .project_project.all {
+  display: block;
+  max-width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+.project .project_project_web.web {
+  display: block;
+  max-width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+.project .project_project_app.app {
+  display: block;
+  max-width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+.project .project_project .wrapper {
   display: grid;
   grid-template-rows: repeat(3, 350px);
   grid-template-columns: repeat(4, 250px);
   grid-gap: 20px;
 }
+.project .project_project_web .wrapper {
+  display: grid;
+  grid-template-rows: repeat(2, 350px);
+  grid-template-columns: repeat(4, 250px);
+  grid-gap: 20px;
+}
+.project .project_project_app .wrapper {
+  display: grid;
+  grid-template-rows: repeat(2, 350px);
+  grid-template-columns: repeat(4, 250px);
+  grid-gap: 20px;
+}
 @media (max-width: 1120px) {
-  .project .wrapper {
+  .project .project_project .wrapper {
     display: grid;
     grid-template-rows: repeat(4, 350px);
     grid-template-columns: repeat(3, 250px);
     grid-gap: 20px;
   }
+  .project .project_project_web .wrapper {
+    display: grid;
+    grid-template-rows: repeat(2, 350px);
+    grid-template-columns: repeat(3, 250px);
+    grid-gap: 20px;
+  }
+  .project .project_project_app .wrapper {
+    display: grid;
+    grid-template-rows: repeat(2, 350px);
+    grid-template-columns: repeat(3, 250px);
+    grid-gap: 20px;
+  }
+
   .project .project_project {
+    display: none;
     max-width: 810px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
   }
-  .project .projectbtn {
+  .project .project_project_web {
+    display: none;
+    max-width: 810px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+  .project .project_project_app {
+    display: none;
+    max-width: 810px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+
+  .project .project_project.all {
+    display: block;
+    max-width: 810px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+  .project .project_project_web.web {
+    display: block;
+    max-width: 810px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+  .project .project_project_app.app {
+    display: block;
+    max-width: 810px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+
+  .project .project_btn {
     max-width: 810px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media (max-width: 850px) {
-  .project .wrapper {
+  .project .project_project .wrapper {
     display: grid;
     grid-template-rows: repeat(5, 350px);
     grid-template-columns: repeat(2, 250px);
     grid-gap: 20px;
   }
+  .project .project_project_web .wrapper {
+    display: grid;
+    grid-template-rows: repeat(3, 350px);
+    grid-template-columns: repeat(2, 250px);
+    grid-gap: 20px;
+  }
+  .project .project_project_app .wrapper {
+    display: grid;
+    grid-template-rows: repeat(3, 350px);
+    grid-template-columns: repeat(2, 250px);
+    grid-gap: 20px;
+  }
   .project .project_project {
+    display: none;
     max-width: 540px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
   }
-  .project .projectbtn {
+  .project .project_project_web {
+    display: none;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+  .project .project_project_app {
+    display: none;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+
+  .project .project_project.all {
+    display: block;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+  .project .project_project_web.web {
+    display: block;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+  .project .project_project_app.app {
+    display: block;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+  .project .project_btn {
     max-width: 540px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media (max-width: 580px) {
-  .project .wrapper {
+  .project .project_project .wrapper {
     display: grid;
     grid-template-rows: repeat(10, 350px);
     grid-template-columns: repeat(1, 250px);
     grid-gap: 20px;
   }
+  .project .project_project_web .wrapper {
+    display: grid;
+    grid-template-rows: repeat(5, 350px);
+    grid-template-columns: repeat(1, 250px);
+    grid-gap: 20px;
+  }
+  .project .project_project_app .wrapper {
+    display: grid;
+    grid-template-rows: repeat(5, 350px);
+    grid-template-columns: repeat(1, 250px);
+    grid-gap: 20px;
+  }
   .project .project_project {
+    display: none;
     max-width: 270px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
   }
-  .project .projectbtn {
+  .project .project_project_web {
+    display: none;
+    max-width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+  .project .project_project_app {
+    display: none;
+    max-width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+
+  .project .project_project.all {
+    display: block;
+    max-width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+  .project .project_project_web.web {
+    display: block;
+    max-width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+  .project .project_project_app.app {
+    display: block;
+    max-width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+  .project .project_btn {
     max-width: 270px;
     margin-left: auto;
     margin-right: auto;
@@ -964,11 +1163,10 @@ footer a:hover {
   padding: 10px 10px 10px 10px;
   line-height: 1.5;
   max-width: 230px;
-  max-height: 330px;
+  height: 330px;
   position: relative;
 }
-.project .one .movie {
-}
+
 .project img {
   width: 230px;
   height: 150px;
@@ -990,8 +1188,6 @@ footer a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.material-icons {
 }
 
 .material-symbols-outlined {

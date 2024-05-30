@@ -242,12 +242,11 @@ footer a:hover {
 }
 
 .headline {
-  height: fill-available;
   text-align: center;
   background-image: url("https://github.com/JoSeungHwan/notepad/blob/master/img/myimg/gray-concrete-textured-wall.jpg?raw=true");
   background-size: cover;
   width: 100%;
-  height: -webkit-fill-available;
+  min-height: 100vh;
   margin: -70px auto;
   position: sticky;
 }
@@ -723,13 +722,13 @@ footer a:hover {
   line-height: 1rem;
 }
 
-.project .projectbtn {
+.project .project_btn {
   max-width: 1060px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.project .projectbtn .projectbtn_in {
+.project .project_btn_in {
   text-align: center;
   background-color: #373737;
   border-radius: 9999px;
@@ -738,7 +737,7 @@ footer a:hover {
   padding: 10px;
 }
 
-.project .projectbtn .projectbtn_in .all, .project .projectbtn .projectbtn_in .web, .project .projectbtn .projectbtn_in .app {
+.project .project_btn_in .all, .project .project_btn_in .web, .project .project_btn_in .app {
   color: #fff;
   background-color: #373737;
   border: none;
@@ -747,7 +746,7 @@ footer a:hover {
   height: 40px;
 }
 
-.project .projectbtn .all.active-button {
+.project .project_btn_in .all.active-button {
   color: #0e111b;
   background-color: #fff;
   border: none;
@@ -756,45 +755,77 @@ footer a:hover {
   height: 40px;
 }
 
-.project .projectbtn .all:hover, .project .projectbtn .web:hover, .project .projectbtn .app:hover {
+.project .project_btn_in .all:hover, .project .project_btn_in .web:hover, .project .project_btn_in .app:hover {
   background-color: #737373;
 }
 
-.project .projectbtn .all:focus, .project .projectbtn .web:focus, .project .projectbtn .app:focus, .project .projectbtn .all:active, .project .projectbtn .web:active, .project .projectbtn .app:active {
+.project .project_btn_in .all:focus, .project .project_btn_in .web:focus, .project .project_btn_in .app:focus, .project .project_btn_in .all:active, .project .project_btn_in .web:active, .project .project_btn_in .app:active {
   color: #0e111b;
   background-color: #fff;
 }
 
-.project .project_project {
+.project .project_project, .project .project_project_web, .project .project_project_app {
   max-width: 1060px;
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
+  display: none;
 }
 
-.project .wrapper {
+.project .project_project.all, .project .project_project_web.web, .project .project_project_app.app {
+  max-width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  display: block;
+}
+
+.project .project_project .wrapper {
   grid-gap: 20px;
   grid-template-rows: repeat(3, 350px);
   grid-template-columns: repeat(4, 250px);
   display: grid;
 }
 
+.project .project_project_web .wrapper, .project .project_project_app .wrapper {
+  grid-gap: 20px;
+  grid-template-rows: repeat(2, 350px);
+  grid-template-columns: repeat(4, 250px);
+  display: grid;
+}
+
 @media (width <= 1120px) {
-  .project .wrapper {
+  .project .project_project .wrapper {
     grid-gap: 20px;
     grid-template-rows: repeat(4, 350px);
     grid-template-columns: repeat(3, 250px);
     display: grid;
   }
 
-  .project .project_project {
+  .project .project_project_web .wrapper, .project .project_project_app .wrapper {
+    grid-gap: 20px;
+    grid-template-rows: repeat(2, 350px);
+    grid-template-columns: repeat(3, 250px);
+    display: grid;
+  }
+
+  .project .project_project, .project .project_project_web, .project .project_project_app {
     max-width: 810px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
+    display: none;
   }
 
-  .project .projectbtn {
+  .project .project_project.all, .project .project_project_web.web, .project .project_project_app.app {
+    max-width: 810px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    display: block;
+  }
+
+  .project .project_btn {
     max-width: 810px;
     margin-left: auto;
     margin-right: auto;
@@ -802,21 +833,37 @@ footer a:hover {
 }
 
 @media (width <= 850px) {
-  .project .wrapper {
+  .project .project_project .wrapper {
     grid-gap: 20px;
     grid-template-rows: repeat(5, 350px);
     grid-template-columns: repeat(2, 250px);
     display: grid;
   }
 
-  .project .project_project {
+  .project .project_project_web .wrapper, .project .project_project_app .wrapper {
+    grid-gap: 20px;
+    grid-template-rows: repeat(3, 350px);
+    grid-template-columns: repeat(2, 250px);
+    display: grid;
+  }
+
+  .project .project_project, .project .project_project_web, .project .project_project_app {
     max-width: 540px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
+    display: none;
   }
 
-  .project .projectbtn {
+  .project .project_project.all, .project .project_project_web.web, .project .project_project_app.app {
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    display: block;
+  }
+
+  .project .project_btn {
     max-width: 540px;
     margin-left: auto;
     margin-right: auto;
@@ -824,21 +871,37 @@ footer a:hover {
 }
 
 @media (width <= 580px) {
-  .project .wrapper {
+  .project .project_project .wrapper {
     grid-gap: 20px;
     grid-template-rows: repeat(10, 350px);
     grid-template-columns: repeat(1, 250px);
     display: grid;
   }
 
-  .project .project_project {
+  .project .project_project_web .wrapper, .project .project_project_app .wrapper {
+    grid-gap: 20px;
+    grid-template-rows: repeat(5, 350px);
+    grid-template-columns: repeat(1, 250px);
+    display: grid;
+  }
+
+  .project .project_project, .project .project_project_web, .project .project_project_app {
     max-width: 270px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
+    display: none;
   }
 
-  .project .projectbtn {
+  .project .project_project.all, .project .project_project_web.web, .project .project_project_app.app {
+    max-width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    display: block;
+  }
+
+  .project .project_btn {
     max-width: 270px;
     margin-left: auto;
     margin-right: auto;
@@ -849,7 +912,7 @@ footer a:hover {
   background-color: #373737;
   border-radius: .3rem;
   max-width: 230px;
-  max-height: 330px;
+  height: 330px;
   padding: 10px;
   line-height: 1.5;
   position: relative;

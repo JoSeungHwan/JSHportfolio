@@ -26,7 +26,6 @@ export default class Widget extends Component {
         // left: 100,
         behavior: 'smooth',
       });
-      console.log('Hello');
     });
 
     // const scroll = () => {

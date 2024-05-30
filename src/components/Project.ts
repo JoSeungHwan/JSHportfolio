@@ -36,8 +36,8 @@ import {
   ScrollToPlugin,
 } from 'gsap/all';
 import * as ScrollMagic from 'scrollmagic';
-// import { ScrollMagicPluginIndicator } from 'scrollmagic-plugins';
-// import { ScrollMagicPluginGsap } from 'scrollmagic-plugin-gsap';
+import { ScrollMagicPluginIndicator } from 'scrollmagic-plugins';
+import { ScrollMagicPluginGsap } from 'scrollmagic-plugin-gsap';
 
 export default class Project extends Component {
   render() {
@@ -176,9 +176,9 @@ export default class Project extends Component {
 
     var controller = new ScrollMagic.Controller();
 
-    // var setMultipleClasses = TweenMax.to('.projectbtn', 0.5, {
-    //   className: 'show',
-    // });
+    var setMultipleClasses = TweenMax.to(btnEls, 0.5, {
+      className: 'show',
+    });
     var scene = new ScrollMagic.Scene({
       // duration: 100,
       // offset: 200,

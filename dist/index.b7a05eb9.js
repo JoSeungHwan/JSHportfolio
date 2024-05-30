@@ -762,7 +762,7 @@ class TheHeader extends (0, _jo.Component) {
       <a
         href="#/"
         class="logo">
-        <span>JSH</span><span class="logo_span">.portfolio</span>
+        <span>JSH</span>
       </a>
       <nav>
         <ul>

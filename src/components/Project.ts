@@ -1,40 +1,5 @@
 import { Component } from '../core/jo';
-import {
-  // gsap,
-  // ScrollTrigger,
-  // Draggable,
-  // MotionPathPlugin,
-  // ScrollToPlugin,
-  Power0,
-  Power1,
-  Power2,
-  Power3,
-  Power4,
-  Linear,
-  Quad,
-  Cubic,
-  Quart,
-  Quint,
-  Strong,
-  Elastic,
-  Back,
-  SteppedEase,
-  Bounce,
-  Sine,
-  Expo,
-  Circ,
-  TweenLite,
-  TimelineLite,
-  TimelineMax,
-  TweenMax,
-} from 'gsap';
-import {
-  gsap,
-  ScrollTrigger,
-  Draggable,
-  MotionPathPlugin,
-  ScrollToPlugin,
-} from 'gsap/all';
+import { gsap } from 'gsap';
 import * as ScrollMagic from 'scrollmagic';
 import { ScrollMagicPluginIndicator } from 'scrollmagic-plugins';
 import { ScrollMagicPluginGsap } from 'scrollmagic-plugin-gsap';
@@ -284,12 +249,12 @@ export default class Project extends Component {
       webdivEl.classList.remove('web');
       appdivEl.classList.remove('app');
 
-      if (webdivEl.classList.container('web')) {
-        webdivEl.classList.remove('web');
-      }
-      if (appdivEl.classList.container('app')) {
-        appdivEl.classList.remove('app');
-      }
+      // if (webdivEl.classList.container('web')) {
+      //   webdivEl.classList.remove('web');
+      // }
+      // if (appdivEl.classList.container('app')) {
+      //   appdivEl.classList.remove('app');
+      // }
     });
     webbtnEl.addEventListener('click', () => {
       allbtnEl.classList.remove('active-button');
@@ -297,12 +262,12 @@ export default class Project extends Component {
       alldivEl.classList.remove('all');
       appdivEl.classList.remove('app');
 
-      if (alldivEl.classList.container('all')) {
-        alldivEl.classList.remove('all');
-      }
-      if (appdivEl.classList.container('app')) {
-        appdivEl.classList.remove('app');
-      }
+      // if (alldivEl.classList.container('all')) {
+      //   alldivEl.classList.remove('all');
+      // }
+      // if (appdivEl.classList.container('app')) {
+      //   appdivEl.classList.remove('app');
+      // }
     });
     appbtnEl.addEventListener('click', () => {
       allbtnEl.classList.remove('active-button');
@@ -310,12 +275,12 @@ export default class Project extends Component {
       alldivEl.classList.remove('all');
       webdivEl.classList.remove('web');
 
-      if (alldivEl.classList.container('all')) {
-        alldivEl.classList.remove('all');
-      }
-      if (webdivEl.classList.container('web')) {
-        webdivEl.classList.remove('web');
-      }
+      // if (alldivEl.classList.container('all')) {
+      //   alldivEl.classList.remove('all');
+      // }
+      // if (webdivEl.classList.container('web')) {
+      //   webdivEl.classList.remove('web');
+      // }
     });
 
     const btnEls = this.el.querySelector('.project_btn');

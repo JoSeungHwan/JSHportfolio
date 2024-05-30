@@ -250,15 +250,29 @@ footer a:hover {
 .headline {
   margin-bottom: 40px;
   position: sticky;
-  min-width: 100%;
+  min-width: 100vw;
   margin: -70px auto;
-  background-image: url(https://github.com/JoSeungHwan/notepad/blob/master/img/myimg/gray-concrete-textured-wall.jpg?raw=true);
+  /* background-image: url(https://github.com/JoSeungHwan/notepad/blob/master/img/myimg/gray-concrete-textured-wall.jpg?raw=true); */
+  background-image: url(../img/gray.jpg);
   background-size: cover;
-  /* background-color: #f86a05; */
   text-align: center;
+  /* opacity: 0; */
+  /* animation-name: headlines;
+  animation-duration: 3s; */
+  /* animation-delay: 1s; */
 }
+@keyframes headlines {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .headline {
   min-height: 100vh;
+
   @supports (-webkit-touch-callout: none) {
     min-height: -webkit-fill-available;
   }
@@ -269,7 +283,19 @@ footer a:hover {
   line-height: 1;
   margin-bottom: 40px;
   padding-top: 100px;
+  /* opacity: 0; */
+  /* animation-name: headlinesh11;
+  animation-duration: 5s; */
 }
+@keyframes headlinesh11 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .headline h1 span {
   /* color: var(--color-primary); */
   color: #0e111b;
@@ -310,6 +336,9 @@ footer a:hover {
     display: none;
     /* height: 500px; */
   }
+}
+.headline .fade-in {
+  opacity: 0;
 }
 
 /* routes/About */

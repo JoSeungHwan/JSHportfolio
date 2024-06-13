@@ -48,7 +48,7 @@ body {
 
 /* Button */
 .btn {
-  height: 50px;
+  /* height: 50px;
   padding: 0 20px;
   border: none;
   border-radius: 4px;
@@ -58,10 +58,25 @@ body {
   color: var(--color-white);
   background-color: var(--color-area);
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.3s; */
+  width: 130px;
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #333;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: block;
+  transition: 0.4s;
 }
 .btn:hover {
-  background-color: var(--color-hover);
+  background-color: #fff;
+  border: 1px solid #333;
+  color: #333;
 }
 .btn-primary {
   background-color: var(--color-primary);
@@ -979,21 +994,21 @@ footer a:hover {
 
   .project .project_project {
     display: none;
-    max-width: 810px;
+    max-width: 780px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
   }
   .project .project_project_web {
     display: none;
-    max-width: 810px;
+    max-width: 780px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
   }
   .project .project_project_app {
     display: none;
-    max-width: 810px;
+    max-width: 780px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
@@ -1001,28 +1016,28 @@ footer a:hover {
 
   .project .project_project.all {
     display: block;
-    max-width: 810px;
+    max-width: 780px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
   }
   .project .project_project_web.web {
     display: block;
-    max-width: 810px;
+    max-width: 780px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
   }
   .project .project_project_app.app {
     display: block;
-    max-width: 810px;
+    max-width: 780px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
   }
 
   .project .project_btn {
-    max-width: 810px;
+    max-width: 780px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1048,21 +1063,21 @@ footer a:hover {
   }
   .project .project_project {
     display: none;
-    max-width: 540px;
+    max-width: 520px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
   }
   .project .project_project_web {
     display: none;
-    max-width: 540px;
+    max-width: 520px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
   }
   .project .project_project_app {
     display: none;
-    max-width: 540px;
+    max-width: 520px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
@@ -1070,27 +1085,27 @@ footer a:hover {
 
   .project .project_project.all {
     display: block;
-    max-width: 540px;
+    max-width: 520px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
   }
   .project .project_project_web.web {
     display: block;
-    max-width: 540px;
+    max-width: 520px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
   }
   .project .project_project_app.app {
     display: block;
-    max-width: 540px;
+    max-width: 520px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
   }
   .project .project_btn {
-    max-width: 540px;
+    max-width: 520px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1116,21 +1131,21 @@ footer a:hover {
   }
   .project .project_project {
     display: none;
-    max-width: 270px;
+    max-width: 250px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
   }
   .project .project_project_web {
     display: none;
-    max-width: 270px;
+    max-width: 250px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
   }
   .project .project_project_app {
     display: none;
-    max-width: 270px;
+    max-width: 250px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
@@ -1138,27 +1153,27 @@ footer a:hover {
 
   .project .project_project.all {
     display: block;
-    max-width: 270px;
+    max-width: 250px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
   }
   .project .project_project_web.web {
     display: block;
-    max-width: 270px;
+    max-width: 250px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
   }
   .project .project_project_app.app {
     display: block;
-    max-width: 270px;
+    max-width: 250px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
   }
   .project .project_btn {
-    max-width: 270px;
+    max-width: 250px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1168,11 +1183,20 @@ footer a:hover {
 .three,
 .four,
 .five,
+.nine,
+.ten {
+  position: relative;
+}
+.project .one .one_project,
+.two .two_project,
+.three .three_project,
+.four .four_project,
+.five .five_project,
 .six,
 .seven,
 .eight,
-.nine,
-.ten {
+.nine .nine_project,
+.ten .ten_project {
   background-color: rgb(55, 55, 55);
   border-radius: 0.3rem;
   padding: 10px 10px 10px 10px;
@@ -1180,6 +1204,43 @@ footer a:hover {
   max-width: 230px;
   height: 330px;
   position: relative;
+  transition: 0.4s;
+}
+.project .one .one_project_hover,
+.two .two_project_hover,
+.three .three_project_hover,
+.four .four_project_hover,
+.five .five_project_hover,
+.nine .nine_project_hover,
+.ten .ten_project_hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+}
+.project .one button {
+  width: 150px;
+  height: 50px;
+}
+.project .one:hover .one_project,
+.two:hover .two_project,
+.three:hover .three_project,
+.four:hover .four_project,
+.five:hover .five_project,
+.nine:hover .nine_project,
+.ten:hover .ten_project {
+  opacity: 0.2;
+  cursor: pointer;
+}
+.project .one:hover .one_project_hover,
+.two:hover .two_project_hover,
+.three:hover .three_project_hover,
+.four:hover .four_project_hover,
+.five:hover .five_project_hover,
+.nine:hover .nine_project_hover,
+.ten:hover .ten_project_hover {
+  opacity: 1;
 }
 
 .project img {

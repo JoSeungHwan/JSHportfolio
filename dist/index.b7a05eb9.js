@@ -936,7 +936,7 @@ class Headline extends (0, _jo.Component) {
         \u{C0AC}\u{C6A9}\u{C790}\u{C5D0}\u{AC8C} \u{CD5C}\u{ACE0}\u{C758} \u{ACBD}\u{D5D8}\u{ACFC} \u{D3B8}\u{C758}\u{C131}\u{C744} \u{C81C}\u{ACF5}\u{D560} \u{C218} \u{C788}\u{B294}<br/>
         \u{AC1C}\u{BC1C}\u{C790}\u{B85C} \u{C131}\u{C7A5}\u{D558}\u{ACA0}\u{C2B5}\u{B2C8}\u{B2E4}.
       </p>
-      <img class="fade-in" src="https://github.com/JoSeungHwan/notepad/blob/master/img/myimg/jo.png?raw=true" alt="user">
+      <img class="fade-in" src="https://github.com/JoSeungHwan/notepad/blob/master/img/myimg/myjo.png?raw=true" alt="user">
       <!-- <img src="" href=".../img/jo.png" alt="user">  -->
     `;
         const fadeEls = this.el.querySelectorAll(".headline .fade-in");
@@ -7460,52 +7460,87 @@ class Project extends (0, _jo.Component) {
         <div class="wrapper back-to-position to-right delay-1">
 
           <div class="one">
-            <h2>JSH_Portfolio</h2>
-            <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/projecting/JSH.png?raw=true" alt="Movie_app">
-            <h3>\u{AC1C}\u{C778}\u{D504}\u{B85C}\u{C81D}\u{D2B8}(Web)</h3>
-            <div class="detail">\u{C870}\u{C2B9}\u{D658} \u{D3EC}\u{D2B8}\u{D3F4}\u{B9AC}\u{C624} \u{D648}\u{D398}\u{C774}\u{C9C0} \u{C785}\u{B2C8}\u{B2E4}.</div>
-            <div class="span">
-              <span>\u{AC1C}\u{C778}</span><span>\u{BC18}\u{C751}\u{D615}</span><span>\u{D37C}\u{BE14}\u{B9AC}\u{C2F1}</span>
+            <div class="one_project">
+              <h2>JSH_Portfolio</h2>
+              <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/projecting/JSH.png?raw=true" alt="Movie_app">
+              <h3>\u{AC1C}\u{C778}\u{D504}\u{B85C}\u{C81D}\u{D2B8}(Web)</h3>
+              <div class="detail">\u{C870}\u{C2B9}\u{D658} \u{D3EC}\u{D2B8}\u{D3F4}\u{B9AC}\u{C624} \u{D648}\u{D398}\u{C774}\u{C9C0} \u{C785}\u{B2C8}\u{B2E4}.</div>
+              <div class="span">
+                <span>\u{AC1C}\u{C778}</span><span>\u{BC18}\u{C751}\u{D615}</span><span>\u{D37C}\u{BE14}\u{B9AC}\u{C2F1}</span>
+              </div>
+            </div>
+            <div class="one_project_hover">
+              <a href="https://github.com/JoSeungHwan/JSHportfolio" target="_blank">
+                <button class="btn">github</button>
+              </a>
             </div>
           </div>
 
           <div class="two">
-            <h2>Movie_App</h2> 
-            <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/project/Movie-app.png?raw=true" alt="Movie_app">
-            <h3>\u{AC1C}\u{C778}\u{D504}\u{B85C}\u{C81D}\u{D2B8}(Web)</h3>            
-            <div class="detail">OMDb API\u{B97C} \u{C774}\u{C6A9}\u{D574} \u{B9CC}\u{B4E0} \u{C601}\u{D654} \u{AC80}\u{C0C9} \u{D648}\u{D398}\u{C774}\u{C9C0} \u{C785}\u{B2C8}\u{B2E4}.</div>
-            <div class="span">
-              <span>\u{AC1C}\u{C778}</span><span>\u{BC18}\u{C751}\u{D615}</span><span>\u{D37C}\u{BE14}\u{B9AC}\u{C2F1}</span>
+            <div class="two_project">
+              <h2>Movie_App</h2> 
+              <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/project/Movie-app.png?raw=true" alt="Movie_app">
+              <h3>\u{AC1C}\u{C778}\u{D504}\u{B85C}\u{C81D}\u{D2B8}(Web)</h3>            
+              <div class="detail">OMDb API\u{B97C} \u{C774}\u{C6A9}\u{D574} \u{B9CC}\u{B4E0} \u{C601}\u{D654} \u{AC80}\u{C0C9} \u{D648}\u{D398}\u{C774}\u{C9C0} \u{C785}\u{B2C8}\u{B2E4}.</div>
+              <div class="span">
+                <span>\u{AC1C}\u{C778}</span><span>\u{BC18}\u{C751}\u{D615}</span><span>\u{D37C}\u{BE14}\u{B9AC}\u{C2F1}</span>
+              </div>
+            </div>
+            <div class="two_project_hover">
+              <a href="https://github.com/JoSeungHwan/JoMovie-App" target="_blank">
+                <button class="btn">github</button>
+              </a>
             </div>
           </div> 
 
           <div class="three">
-            <h2>\u{C655}\u{AC00} \u{D0D5}\u{D6C4}\u{B8E8}</h2>
-            <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/projecting/nunastudy.png?raw=true" alt="Movie_app">
-            <h3>\u{D300}\u{D504}\u{B85C}\u{C81D}\u{D2B8}(Web)</h3> 
-            <div class="detail">\u{D300} \u{D504}\u{B85C}\u{C81D}\u{D2B8}\u{B85C} \u{C9C4}\u{D589}\u{D55C} \u{C655}\u{AC00}\u{D0D5}\u{D6C4}\u{B8E8} \u{D074}\u{B860}\u{CF54}\u{B529}\u{C785}\u{B2C8}\u{B2E4}.</div>
-            <div class="span">
-              <span>\u{D300}</span><span>\u{BC18}\u{C751}\u{D615}</span><span>\u{D074}\u{B860}\u{CF54}\u{B529}</span>
+            <div class="three_project">
+              <h2>\u{C655}\u{AC00} \u{D0D5}\u{D6C4}\u{B8E8}</h2>
+              <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/projecting/nunastudy.png?raw=true" alt="Movie_app">
+              <h3>\u{D300}\u{D504}\u{B85C}\u{C81D}\u{D2B8}(Web)</h3> 
+              <div class="detail">\u{D300} \u{D504}\u{B85C}\u{C81D}\u{D2B8}\u{B85C} \u{C9C4}\u{D589}\u{D55C} \u{C655}\u{AC00}\u{D0D5}\u{D6C4}\u{B8E8} \u{D074}\u{B860}\u{CF54}\u{B529}\u{C785}\u{B2C8}\u{B2E4}.</div>
+              <div class="span">
+                <span>\u{D300}</span><span>\u{BC18}\u{C751}\u{D615}</span><span>\u{D074}\u{B860}\u{CF54}\u{B529}</span>
+              </div>
+            </div>
+            <div class="three_project_hover">
+              <a href="https://github.com/kwon1341/nunaStudy-html-css" target="_blank">
+                <button class="btn">github</button>
+              </a>
             </div>
           </div>
 
           <div class="four">
-            <h2>Apple</h2>
-            <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/project/apple.png?raw=true" alt="Movie_app">
-            <h3>\u{AC1C}\u{C778}\u{D504}\u{B85C}\u{C81D}\u{D2B8}(Web)</h3>
-            <div class="detail">Apple \u{D648}\u{D398}\u{C774}\u{C9C0} \u{D074}\u{B860}\u{CF54}\u{B529}\u{C785}\u{B2C8}\u{B2E4}.</div>
-            <div class="span">
-              <span>\u{AC1C}\u{C778}</span><span>\u{BC18}\u{C751}\u{D615}</span><span>\u{D074}\u{B860}\u{CF54}\u{B529}</span>
+            <div class="four_project">
+              <h2>Apple</h2>
+              <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/project/apple.png?raw=true" alt="Movie_app">
+              <h3>\u{AC1C}\u{C778}\u{D504}\u{B85C}\u{C81D}\u{D2B8}(Web)</h3>
+              <div class="detail">Apple \u{D648}\u{D398}\u{C774}\u{C9C0} \u{D074}\u{B860}\u{CF54}\u{B529}\u{C785}\u{B2C8}\u{B2E4}.</div>
+              <div class="span">
+                <span>\u{AC1C}\u{C778}</span><span>\u{BC18}\u{C751}\u{D615}</span><span>\u{D074}\u{B860}\u{CF54}\u{B529}</span>
+              </div>
+            </div>
+            <div class="four_project_hover">
+              <a href="https://github.com/JoSeungHwan/apple-ipad" target="_blank">
+                <button class="btn">github</button>
+              </a>
             </div>
           </div>
 
           <div class="five">
-            <h2>Starbucks</h2>
-            <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/project/starbucks.png?raw=true" alt="Movie_app">
-            <h3>\u{AC1C}\u{C778}\u{D504}\u{B85C}\u{C81D}\u{D2B8}(Web)</h3> 
-            <div class="detail">\u{C2A4}\u{D0C0}\u{BC85}\u{C2A4} \u{D648}\u{D398}\u{C774}\u{C9C0} \u{D074}\u{B860}\u{CF54}\u{B529}\u{C785}\u{B2C8}\u{B2E4}.</div>
-            <div class="span">
-              <span>\u{AC1C}\u{C778}</span><span>Web</span><span>\u{D074}\u{B860}\u{CF54}\u{B529}</span>
+            <div class="five_project">
+              <h2>Starbucks</h2>
+              <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/project/starbucks.png?raw=true" alt="Movie_app">
+              <h3>\u{AC1C}\u{C778}\u{D504}\u{B85C}\u{C81D}\u{D2B8}(Web)</h3> 
+              <div class="detail">\u{C2A4}\u{D0C0}\u{BC85}\u{C2A4} \u{D648}\u{D398}\u{C774}\u{C9C0} \u{D074}\u{B860}\u{CF54}\u{B529}\u{C785}\u{B2C8}\u{B2E4}.</div>
+              <div class="span">
+                <span>\u{AC1C}\u{C778}</span><span>Web</span><span>\u{D074}\u{B860}\u{CF54}\u{B529}</span>
+              </div>
+            </div>
+            <div class="five_project_hover">
+              <a href="https://github.com/JoSeungHwan/starbucks" target="_blank">
+                <button class="btn">github</button>
+              </a>
             </div>
           </div>
 
@@ -7540,22 +7575,36 @@ class Project extends (0, _jo.Component) {
           </div>
 
           <div class="nine">
-            <h2>Moo</h2>
-            <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/projecting/Moo.png?raw=true" alt="Movie_app">
-            <h3>\u{AC1C}\u{C778}\u{D504}\u{B85C}\u{C81D}\u{D2B8}(App)</h3>
-            <div class="detail">\u{BA54}\u{BAA8}\u{C7A5}\u{AE30}\u{B2A5}\u{ACFC} ToDoList\u{AE30}\u{B2A5}\u{C744} \u{D569}\u{CE5C} \u{AC1C}\u{C778}\u{C77C}\u{C815}\u{AD00}\u{B9AC} APP \u{C785}\u{B2C8}\u{B2E4}.</div>
-            <div class="span">
-              <span>\u{AC1C}\u{C778}</span><span>APP</span><span>\u{C0AC}\u{C774}\u{B4DC}</span>
+            <div class="nine_project">
+              <h2>Moo</h2>
+              <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/projecting/Moo.png?raw=true" alt="Movie_app">
+              <h3>\u{AC1C}\u{C778}\u{D504}\u{B85C}\u{C81D}\u{D2B8}(App)</h3>
+              <div class="detail">\u{BA54}\u{BAA8}\u{C7A5}\u{AE30}\u{B2A5}\u{ACFC} ToDoList\u{AE30}\u{B2A5}\u{C744} \u{D569}\u{CE5C} \u{AC1C}\u{C778}\u{C77C}\u{C815}\u{AD00}\u{B9AC} APP \u{C785}\u{B2C8}\u{B2E4}.</div>
+              <div class="span">
+                <span>\u{AC1C}\u{C778}</span><span>APP</span><span>\u{C0AC}\u{C774}\u{B4DC}</span>
+              </div>
+            </div>
+            <div class="nine_project_hover">
+              <a href="https://github.com/JoSeungHwan/Moo-App" target="_blank">
+                <button class="btn">github</button>
+              </a>
             </div>
           </div>
 
           <div class="ten">
-            <h2>COVID19 \u{D604}\u{D669}\u{D310}</h2>
-            <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/projecting/COVID19.png?raw=true" alt="Movie_app">
-            <h3>\u{AC1C}\u{C778}\u{D504}\u{B85C}\u{C81D}\u{D2B8}(App)</h3> 
-            <div class="detail">Corona-19 API\u{B97C} \u{C774}\u{C6A9}\u{D574} \u{CF54}\u{B85C}\u{B098}\u{AC10}\u{C5FC} \u{D604}\u{D669}\u{D310} APP \u{C785}\u{B2C8}\u{B2E4}.</div>
-            <div class="span">
-              <span>\u{AC1C}\u{C778}</span><span>APP</span><span>\u{C0AC}\u{C774}\u{B4DC}</span>
+            <div class="ten_project">
+              <h2>COVID19 \u{D604}\u{D669}\u{D310}</h2>
+              <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/projecting/COVID19.png?raw=true" alt="Movie_app">
+              <h3>\u{AC1C}\u{C778}\u{D504}\u{B85C}\u{C81D}\u{D2B8}(App)</h3> 
+              <div class="detail">Corona-19 API\u{B97C} \u{C774}\u{C6A9}\u{D574} \u{CF54}\u{B85C}\u{B098}\u{AC10}\u{C5FC} \u{D604}\u{D669}\u{D310} APP \u{C785}\u{B2C8}\u{B2E4}.</div>
+              <div class="span">
+                <span>\u{AC1C}\u{C778}</span><span>APP</span><span>\u{C0AC}\u{C774}\u{B4DC}</span>
+              </div>
+            </div>
+            <div class="ten_project_hover">
+              <a href="https://github.com/JoSeungHwan/COVID19-App" target="_blank">
+                <button class="btn">github</button>
+              </a>
             </div>
           </div>
         </div>

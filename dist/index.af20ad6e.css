@@ -27,21 +27,25 @@ body {
 }
 
 .btn {
-  color: var(--color-white);
-  background-color: var(--color-area);
+  color: #fff;
+  text-align: center;
   cursor: pointer;
-  border: none;
+  box-sizing: border-box;
+  background-color: #333;
+  border: 1px solid #fff;
   border-radius: 4px;
-  outline: none;
-  height: 50px;
-  padding: 0 20px;
-  font-size: 14px;
+  width: 130px;
+  padding: 10px;
+  font-size: 16px;
   font-weight: 700;
-  transition: all .3s;
+  transition: all .4s;
+  display: block;
 }
 
 .btn:hover {
-  background-color: var(--color-hover);
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #333;
 }
 
 .btn-primary {
@@ -823,7 +827,7 @@ footer a:hover {
   }
 
   .project .project_project, .project .project_project_web, .project .project_project_app {
-    max-width: 810px;
+    max-width: 780px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
@@ -831,7 +835,7 @@ footer a:hover {
   }
 
   .project .project_project.all, .project .project_project_web.web, .project .project_project_app.app {
-    max-width: 810px;
+    max-width: 780px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
@@ -839,7 +843,7 @@ footer a:hover {
   }
 
   .project .project_btn {
-    max-width: 810px;
+    max-width: 780px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -861,7 +865,7 @@ footer a:hover {
   }
 
   .project .project_project, .project .project_project_web, .project .project_project_app {
-    max-width: 540px;
+    max-width: 520px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
@@ -869,7 +873,7 @@ footer a:hover {
   }
 
   .project .project_project.all, .project .project_project_web.web, .project .project_project_app.app {
-    max-width: 540px;
+    max-width: 520px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
@@ -877,7 +881,7 @@ footer a:hover {
   }
 
   .project .project_btn {
-    max-width: 540px;
+    max-width: 520px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -899,7 +903,7 @@ footer a:hover {
   }
 
   .project .project_project, .project .project_project_web, .project .project_project_app {
-    max-width: 270px;
+    max-width: 250px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
@@ -907,7 +911,7 @@ footer a:hover {
   }
 
   .project .project_project.all, .project .project_project_web.web, .project .project_project_app.app {
-    max-width: 270px;
+    max-width: 250px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
@@ -915,20 +919,47 @@ footer a:hover {
   }
 
   .project .project_btn {
-    max-width: 270px;
+    max-width: 250px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 
-.project .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten {
+.project .one, .two, .three, .four, .five, .nine, .ten {
+  position: relative;
+}
+
+.project .one .one_project, .two .two_project, .three .three_project, .four .four_project, .five .five_project, .six, .seven, .eight, .nine .nine_project, .ten .ten_project {
   background-color: #373737;
   border-radius: .3rem;
   max-width: 230px;
   height: 330px;
   padding: 10px;
   line-height: 1.5;
+  transition: all .4s;
   position: relative;
+}
+
+.project .one .one_project_hover, .two .two_project_hover, .three .three_project_hover, .four .four_project_hover, .five .five_project_hover, .nine .nine_project_hover, .ten .ten_project_hover {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.project .one button {
+  width: 150px;
+  height: 50px;
+}
+
+.project .one:hover .one_project, .two:hover .two_project, .three:hover .three_project, .four:hover .four_project, .five:hover .five_project, .nine:hover .nine_project, .ten:hover .ten_project {
+  opacity: .2;
+  cursor: pointer;
+}
+
+.project .one:hover .one_project_hover, .two:hover .two_project_hover, .three:hover .three_project_hover, .four:hover .four_project_hover, .five:hover .five_project_hover, .nine:hover .nine_project_hover, .ten:hover .ten_project_hover {
+  opacity: 1;
 }
 
 .project img {

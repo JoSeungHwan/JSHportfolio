@@ -20,52 +20,87 @@ export default class Project extends Component {
         <div class="wrapper back-to-position to-right delay-1">
 
           <div class="one">
-            <h2>JSH_Portfolio</h2>
-            <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/projecting/JSH.png?raw=true" alt="Movie_app">
-            <h3>개인프로젝트(Web)</h3>
-            <div class="detail">조승환 포트폴리오 홈페이지 입니다.</div>
-            <div class="span">
-              <span>개인</span><span>반응형</span><span>퍼블리싱</span>
+            <div class="one_project">
+              <h2>JSH_Portfolio</h2>
+              <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/projecting/JSH.png?raw=true" alt="Movie_app">
+              <h3>개인프로젝트(Web)</h3>
+              <div class="detail">조승환 포트폴리오 홈페이지 입니다.</div>
+              <div class="span">
+                <span>개인</span><span>반응형</span><span>퍼블리싱</span>
+              </div>
+            </div>
+            <div class="one_project_hover">
+              <a href="https://github.com/JoSeungHwan/JSHportfolio" target="_blank">
+                <button class="btn">github</button>
+              </a>
             </div>
           </div>
 
           <div class="two">
-            <h2>Movie_App</h2> 
-            <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/project/Movie-app.png?raw=true" alt="Movie_app">
-            <h3>개인프로젝트(Web)</h3>            
-            <div class="detail">OMDb API를 이용해 만든 영화 검색 홈페이지 입니다.</div>
-            <div class="span">
-              <span>개인</span><span>반응형</span><span>퍼블리싱</span>
+            <div class="two_project">
+              <h2>Movie_App</h2> 
+              <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/project/Movie-app.png?raw=true" alt="Movie_app">
+              <h3>개인프로젝트(Web)</h3>            
+              <div class="detail">OMDb API를 이용해 만든 영화 검색 홈페이지 입니다.</div>
+              <div class="span">
+                <span>개인</span><span>반응형</span><span>퍼블리싱</span>
+              </div>
+            </div>
+            <div class="two_project_hover">
+              <a href="https://github.com/JoSeungHwan/JoMovie-App" target="_blank">
+                <button class="btn">github</button>
+              </a>
             </div>
           </div> 
 
           <div class="three">
-            <h2>왕가 탕후루</h2>
-            <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/projecting/nunastudy.png?raw=true" alt="Movie_app">
-            <h3>팀프로젝트(Web)</h3> 
-            <div class="detail">팀 프로젝트로 진행한 왕가탕후루 클론코딩입니다.</div>
-            <div class="span">
-              <span>팀</span><span>반응형</span><span>클론코딩</span>
+            <div class="three_project">
+              <h2>왕가 탕후루</h2>
+              <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/projecting/nunastudy.png?raw=true" alt="Movie_app">
+              <h3>팀프로젝트(Web)</h3> 
+              <div class="detail">팀 프로젝트로 진행한 왕가탕후루 클론코딩입니다.</div>
+              <div class="span">
+                <span>팀</span><span>반응형</span><span>클론코딩</span>
+              </div>
+            </div>
+            <div class="three_project_hover">
+              <a href="https://github.com/kwon1341/nunaStudy-html-css" target="_blank">
+                <button class="btn">github</button>
+              </a>
             </div>
           </div>
 
           <div class="four">
-            <h2>Apple</h2>
-            <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/project/apple.png?raw=true" alt="Movie_app">
-            <h3>개인프로젝트(Web)</h3>
-            <div class="detail">Apple 홈페이지 클론코딩입니다.</div>
-            <div class="span">
-              <span>개인</span><span>반응형</span><span>클론코딩</span>
+            <div class="four_project">
+              <h2>Apple</h2>
+              <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/project/apple.png?raw=true" alt="Movie_app">
+              <h3>개인프로젝트(Web)</h3>
+              <div class="detail">Apple 홈페이지 클론코딩입니다.</div>
+              <div class="span">
+                <span>개인</span><span>반응형</span><span>클론코딩</span>
+              </div>
+            </div>
+            <div class="four_project_hover">
+              <a href="https://github.com/JoSeungHwan/apple-ipad" target="_blank">
+                <button class="btn">github</button>
+              </a>
             </div>
           </div>
 
           <div class="five">
-            <h2>Starbucks</h2>
-            <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/project/starbucks.png?raw=true" alt="Movie_app">
-            <h3>개인프로젝트(Web)</h3> 
-            <div class="detail">스타벅스 홈페이지 클론코딩입니다.</div>
-            <div class="span">
-              <span>개인</span><span>Web</span><span>클론코딩</span>
+            <div class="five_project">
+              <h2>Starbucks</h2>
+              <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/project/starbucks.png?raw=true" alt="Movie_app">
+              <h3>개인프로젝트(Web)</h3> 
+              <div class="detail">스타벅스 홈페이지 클론코딩입니다.</div>
+              <div class="span">
+                <span>개인</span><span>Web</span><span>클론코딩</span>
+              </div>
+            </div>
+            <div class="five_project_hover">
+              <a href="https://github.com/JoSeungHwan/starbucks" target="_blank">
+                <button class="btn">github</button>
+              </a>
             </div>
           </div>
 
@@ -100,22 +135,36 @@ export default class Project extends Component {
           </div>
 
           <div class="nine">
-            <h2>Moo</h2>
-            <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/projecting/Moo.png?raw=true" alt="Movie_app">
-            <h3>개인프로젝트(App)</h3>
-            <div class="detail">메모장기능과 ToDoList기능을 합친 개인일정관리 APP 입니다.</div>
-            <div class="span">
-              <span>개인</span><span>APP</span><span>사이드</span>
+            <div class="nine_project">
+              <h2>Moo</h2>
+              <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/projecting/Moo.png?raw=true" alt="Movie_app">
+              <h3>개인프로젝트(App)</h3>
+              <div class="detail">메모장기능과 ToDoList기능을 합친 개인일정관리 APP 입니다.</div>
+              <div class="span">
+                <span>개인</span><span>APP</span><span>사이드</span>
+              </div>
+            </div>
+            <div class="nine_project_hover">
+              <a href="https://github.com/JoSeungHwan/Moo-App" target="_blank">
+                <button class="btn">github</button>
+              </a>
             </div>
           </div>
 
           <div class="ten">
-            <h2>COVID19 현황판</h2>
-            <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/projecting/COVID19.png?raw=true" alt="Movie_app">
-            <h3>개인프로젝트(App)</h3> 
-            <div class="detail">Corona-19 API를 이용해 코로나감염 현황판 APP 입니다.</div>
-            <div class="span">
-              <span>개인</span><span>APP</span><span>사이드</span>
+            <div class="ten_project">
+              <h2>COVID19 현황판</h2>
+              <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/projecting/COVID19.png?raw=true" alt="Movie_app">
+              <h3>개인프로젝트(App)</h3> 
+              <div class="detail">Corona-19 API를 이용해 코로나감염 현황판 APP 입니다.</div>
+              <div class="span">
+                <span>개인</span><span>APP</span><span>사이드</span>
+              </div>
+            </div>
+            <div class="ten_project_hover">
+              <a href="https://github.com/JoSeungHwan/COVID19-App" target="_blank">
+                <button class="btn">github</button>
+              </a>
             </div>
           </div>
         </div>

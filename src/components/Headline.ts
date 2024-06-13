@@ -14,7 +14,7 @@ export default class Headline extends Component {
         사용자에게 최고의 경험과 편의성을 제공할 수 있는<br/>
         개발자로 성장하겠습니다.
       </p>
-      <img class="fade-in" src="https://github.com/JoSeungHwan/notepad/blob/master/img/myimg/jo.png?raw=true" alt="user">
+      <img class="fade-in" src="https://github.com/JoSeungHwan/notepad/blob/master/img/myimg/myjo.png?raw=true" alt="user">
       <!-- <img src="" href=".../img/jo.png" alt="user">  -->
     `;
 

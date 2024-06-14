@@ -16,6 +16,9 @@ export default class Project extends Component {
           <button class="app">App</button>
         </div>
       </div>
+      <div class='touch'>
+        <div class='back-to-position to-right delay-1'>웹인 경우 마우스를 올리면 모바일의 경우 터치를 하면 깃허브로 이동할 수 있는 버튼이 나옵니다.</div>
+      </div>
       <div class="project_project all">
         <div class="wrapper back-to-position to-right delay-1">
 
@@ -386,6 +389,7 @@ export default class Project extends Component {
     });
 
     const btnEls = this.el.querySelector('.project_btn');
+    const touchEls = this.el.querySelector('.touch');
     const projectEls = this.el.querySelector('.project_project');
 
     var controller = new ScrollMagic.Controller();
@@ -401,6 +405,17 @@ export default class Project extends Component {
       // reverse: false,
     });
     scene.setClassToggle(btnEls, 'show');
+    // scene.setTween(setMultipleClasses);
+    scene.addTo(controller);
+
+    var scene = new ScrollMagic.Scene({
+      // duration: 100,
+      // offset: 200,
+      triggerElement: touchEls,
+      triggerHook: 0.8,
+      // reverse: false,
+    });
+    scene.setClassToggle(touchEls, 'show');
     // scene.setTween(setMultipleClasses);
     scene.addTo(controller);
 

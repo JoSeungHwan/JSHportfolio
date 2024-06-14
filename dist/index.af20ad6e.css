@@ -970,6 +970,21 @@ footer a:hover {
   bottom: 10px;
 }
 
+.project .touch {
+  color: #a6a6a6;
+  text-align: center;
+  margin: 0 70px;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+@media (width <= 500px) {
+  .project .touch {
+    font-size: 12px;
+  }
+}
+
 .project .span span {
   color: #fff;
   background-color: #232323;

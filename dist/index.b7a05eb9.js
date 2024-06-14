@@ -7459,6 +7459,9 @@ class Project extends (0, _jo.Component) {
           <button class="app">App</button>
         </div>
       </div>
+      <div class='touch'>
+        <div class='back-to-position to-right delay-1'>\u{C6F9}\u{C778} \u{ACBD}\u{C6B0} \u{B9C8}\u{C6B0}\u{C2A4}\u{B97C} \u{C62C}\u{B9AC}\u{BA74} \u{BAA8}\u{BC14}\u{C77C}\u{C758} \u{ACBD}\u{C6B0} \u{D130}\u{CE58}\u{B97C} \u{D558}\u{BA74} \u{AE43}\u{D5C8}\u{BE0C}\u{B85C} \u{C774}\u{B3D9}\u{D560} \u{C218} \u{C788}\u{B294} \u{BC84}\u{D2BC}\u{C774} \u{B098}\u{C635}\u{B2C8}\u{B2E4}.</div>
+      </div>
       <div class="project_project all">
         <div class="wrapper back-to-position to-right delay-1">
 
@@ -7823,6 +7826,7 @@ class Project extends (0, _jo.Component) {
         // }
         });
         const btnEls = this.el.querySelector(".project_btn");
+        const touchEls = this.el.querySelector(".touch");
         const projectEls = this.el.querySelector(".project_project");
         var controller = new _scrollmagic.Controller();
         // var setMultipleClasses = TweenMax.to(btnEls, 0.5, {
@@ -7835,6 +7839,15 @@ class Project extends (0, _jo.Component) {
             triggerHook: 0.8
         });
         scene.setClassToggle(btnEls, "show");
+        // scene.setTween(setMultipleClasses);
+        scene.addTo(controller);
+        var scene = new _scrollmagic.Scene({
+            // duration: 100,
+            // offset: 200,
+            triggerElement: touchEls,
+            triggerHook: 0.8
+        });
+        scene.setClassToggle(touchEls, "show");
         // scene.setTween(setMultipleClasses);
         scene.addTo(controller);
         var scene = new _scrollmagic.Scene({

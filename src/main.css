@@ -1155,6 +1155,19 @@ footer a:hover {
   position: absolute;
   bottom: 10px;
 }
+.project .touch {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: rgb(166, 166, 166);
+  text-align: center;
+  margin: 0 70px 0 70px;
+}
+@media (max-width: 500px) {
+  .project .touch {
+    font-size: 12px;
+  }
+}
 .project .span span {
   color: rgba(255, 255, 255, 1);
   font-size: 0.8rem;

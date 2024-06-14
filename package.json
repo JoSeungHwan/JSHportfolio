@@ -26,6 +26,7 @@
     "@swup/scroll-plugin": "^3.3.2",
     "@types/scrollmagic": "^2.0.8",
     "material-icons": "^1.13.12",
+    "reset-css": "^5.0.2",
     "scrollmagic-plugin-gsap": "^1.0.3"
   }
 }

@@ -763,7 +763,7 @@ footer a:hover {
   margin: 20px;
 }
 .aboutme .skill .app_skill1 {
-  width: 460px;
+  width: 450px;
   margin: 20px;
 }
 .aboutme .skill .cooperation_skill1 {
@@ -819,11 +819,315 @@ footer a:hover {
     max-width: 110px;
   }
 }
+.intro {
+  position: relative;
+}
+.intro h1 {
+  color: #d3d3d3;
+  margin-top: 100px;
+  margin-left: 50px;
+  font-size: 50px;
+}
+.intro h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: #fff;
+}
+.intro .introinner {
+  justify-content: center;
+  align-content: center;
+  display: flex;
+}
+.intro .introinner1 {
+  width: 1025px;
+}
+.intro .turn {
+  /* display: flex;
+  justify-content: center;
+  align-content: center; */
+}
+.intro .turn1 {
+  max-width: 700px;
+  margin: 20px;
+}
+.intro .turn2 {
+  background-color: rgb(55, 55, 55);
+  border-radius: 0.7rem;
+  padding: 20px;
+  /* height: 200px; */
+  /* max-width: 500px; */
+}
+.intro .turn3 {
+}
+.intro .turn3 h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: #fff;
+}
+.intro .turn4 {
+  margin: 30px 0 10px 0;
+  font-family: 'Noto+Sans+KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: #d3d3d3;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.intro .work {
+  display: flex;
+  justify-content: end;
+  align-content: center;
+}
+.intro .work1 {
+  width: 700px;
+  margin: 20px;
+}
+.intro .work2 {
+  background-color: rgb(55, 55, 55);
+  border-radius: 0.7rem;
+  padding: 20px;
+  /* height: 200px; */
+  /* max-width: 500px; */
+}
+.intro .work3 {
+}
+.intro .work3 h3 {
+  /* margin: 10px; */
+  /* text-align: end; */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: #fff;
+}
+.intro .work4 {
+  margin: 30px 0 10px 0;
+  /* text-align: end; */
+  font-family: 'Noto+Sans+KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: #d3d3d3;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.intro .myself {
+  /* display: flex;
+  justify-content: center;
+  align-content: center; */
+}
+.intro .myself1 {
+  max-width: 700px;
+  margin: 20px;
+}
+.intro .myself2 {
+  background-color: rgb(55, 55, 55);
+  border-radius: 0.7rem;
+  padding: 20px;
+  /* height: 200px; */
+  /* max-width: 500px; */
+}
+.intro .myself3 {
+}
+.intro .myself3 h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: #fff;
+}
+.intro .myself4 {
+  margin: 30px 0 10px 0;
+  font-family: 'Noto+Sans+KR', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: #d3d3d3;
+  line-height: 1.6;
+  font-size: 16px;
+}
+.intro .myselfbtn {
+  display: flex;
+}
+.intro .myselfbtn a {
+  margin: 10px 20px 10px 20px;
+}
+
+@media (max-width: 760px) {
+  .intro .introinner1 {
+    max-width: 540px;
+  }
+  .intro .turn1 {
+    max-width: 500px;
+    margin: 20px;
+  }
+  .intro .work1 {
+    max-width: 500px;
+    margin: 20px;
+  }
+  .intro .myself1 {
+    max-width: 500px;
+    margin: 20px;
+  }
+  .intro .myself1 .btn {
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #333;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: block;
+    transition: 0.4s;
+  }
+}
+@media (max-width: 600px) {
+  .intro .introinner1 {
+    max-width: 540px;
+  }
+  .intro .turn1 {
+    max-width: 500px;
+    margin: 20px;
+  }
+  .intro .work1 {
+    max-width: 500px;
+    margin: 20px;
+  }
+  .intro .myself1 {
+    max-width: 500px;
+    margin: 20px;
+  }
+}
+@media (max-width: 560px) {
+  .intro .introinner1 {
+    max-width: 520px;
+  }
+  .intro .turn1 {
+    max-width: 480px;
+    margin: 20px;
+  }
+  .intro .work1 {
+    max-width: 480px;
+    margin: 20px;
+  }
+  .intro .myself1 {
+    max-width: 480px;
+    margin: 20px;
+  }
+}
+@media (max-width: 520px) {
+  .intro .introinner1 {
+    max-width: 480px;
+  }
+  .intro .turn1 {
+    max-width: 440px;
+    margin: 20px;
+  }
+  .intro .work1 {
+    max-width: 440px;
+    margin: 20px;
+  }
+  .intro .myself1 {
+    max-width: 440px;
+    margin: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .intro .introinner1 {
+    max-width: 440px;
+  }
+  .intro .turn1 {
+    max-width: 400px;
+    margin: 20px;
+  }
+  .intro .work1 {
+    max-width: 400px;
+    margin: 20px;
+  }
+  .intro .myself1 {
+    max-width: 400px;
+    margin: 20px;
+  }
+}
+@media (max-width: 440px) {
+  .intro .introinner1 {
+    max-width: 400px;
+  }
+  .intro .turn1 {
+    max-width: 360px;
+    margin: 20px;
+  }
+  .intro .work1 {
+    max-width: 360px;
+    margin: 20px;
+  }
+  .intro .myself1 {
+    max-width: 360px;
+    margin: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .intro .introinner1 {
+    max-width: 380px;
+  }
+  .intro .turn1 {
+    max-width: 340px;
+    margin: 20px;
+  }
+  .intro .work1 {
+    max-width: 340px;
+    margin: 20px;
+  }
+  .intro .myself1 {
+    max-width: 340px;
+    margin: 20px;
+  }
+}
+@media (max-width: 360px) {
+  .intro .introinner1 {
+    max-width: 320px;
+  }
+  .intro .turn1 {
+    max-width: 280px;
+    margin: 20px;
+  }
+  .intro .work1 {
+    max-width: 280px;
+    margin: 20px;
+  }
+  .intro .myself1 {
+    max-width: 280px;
+    margin: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .intro .introinner1 {
+    max-width: 280px;
+  }
+  .intro .turn1 {
+    max-width: 240px;
+    margin: 20px;
+  }
+  .intro .work1 {
+    max-width: 240px;
+    margin: 20px;
+  }
+  .intro .myself1 {
+    max-width: 240px;
+    margin: 20px;
+  }
+}
+
 .project {
   /* position: relative; */
 }
 .project h1 {
-  margin-top: 50px;
+  color: #d3d3d3;
+  margin-top: 100px;
   margin-left: 50px;
   font-size: 50px;
 }
@@ -1183,6 +1487,9 @@ footer a:hover {
 .three,
 .four,
 .five,
+.six,
+.seven,
+.eight,
 .nine,
 .ten {
   position: relative;

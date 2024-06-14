@@ -905,20 +905,23 @@ var _headline = require("../components/Headline");
 var _headlineDefault = parcelHelpers.interopDefault(_headline);
 var _aboutme = require("../components/Aboutme");
 var _aboutmeDefault = parcelHelpers.interopDefault(_aboutme);
+var _introduction = require("../components/Introduction");
+var _introductionDefault = parcelHelpers.interopDefault(_introduction);
 var _project = require("../components/Project");
 var _projectDefault = parcelHelpers.interopDefault(_project);
 class Home extends (0, _jo.Component) {
     render() {
         const headline = new (0, _headlineDefault.default)().el;
         const aboutme = new (0, _aboutmeDefault.default)().el;
+        const introduction = new (0, _introductionDefault.default)().el;
         const project = new (0, _projectDefault.default)().el;
         this.el.classList.add("container");
-        this.el.append(headline, aboutme, project);
+        this.el.append(headline, aboutme, introduction, project);
     }
 }
 exports.default = Home;
 
-},{"../core/jo":"gH9Ow","../components/Headline":"8TN2V","../components/Aboutme":"6k6h2","../components/Project":"fODwQ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8TN2V":[function(require,module,exports) {
+},{"../core/jo":"gH9Ow","../components/Headline":"8TN2V","../components/Aboutme":"6k6h2","../components/Project":"fODwQ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../components/Introduction":"UkhKh"}],"8TN2V":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jo = require("../core/jo");
@@ -7607,64 +7610,102 @@ class Project extends (0, _jo.Component) {
               </a>
             </div>
           </div>
+          
         </div>
       </div>
+
 
       <div class="project_project_web">
         <div class="wrapper">
 
           <div class="one">
-            <h2>JSH_Portfolio</h2>
-            <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/projecting/JSH.png?raw=true" alt="Movie_app">
-            <h3>\u{AC1C}\u{C778}\u{D504}\u{B85C}\u{C81D}\u{D2B8}(Web)</h3>
-            <div class="detail">\u{C870}\u{C2B9}\u{D658} \u{D3EC}\u{D2B8}\u{D3F4}\u{B9AC}\u{C624} \u{D648}\u{D398}\u{C774}\u{C9C0} \u{C785}\u{B2C8}\u{B2E4}.</div>
-            <div class="span">
-              <span>\u{AC1C}\u{C778}</span><span>\u{BC18}\u{C751}\u{D615}</span><span>\u{D37C}\u{BE14}\u{B9AC}\u{C2F1}</span>
+            <div class="one_project">
+              <h2>JSH_Portfolio</h2>
+              <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/projecting/JSH.png?raw=true" alt="Movie_app">
+              <h3>\u{AC1C}\u{C778}\u{D504}\u{B85C}\u{C81D}\u{D2B8}(Web)</h3>
+              <div class="detail">\u{C870}\u{C2B9}\u{D658} \u{D3EC}\u{D2B8}\u{D3F4}\u{B9AC}\u{C624} \u{D648}\u{D398}\u{C774}\u{C9C0} \u{C785}\u{B2C8}\u{B2E4}.</div>
+              <div class="span">
+                <span>\u{AC1C}\u{C778}</span><span>\u{BC18}\u{C751}\u{D615}</span><span>\u{D37C}\u{BE14}\u{B9AC}\u{C2F1}</span>
+              </div>
+            </div>
+            <div class="one_project_hover">
+              <a href="https://github.com/JoSeungHwan/JSHportfolio" target="_blank">
+                <button class="btn">github</button>
+              </a>
             </div>
           </div>
 
           <div class="two">
-            <h2>Movie_App</h2> 
-            <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/project/Movie-app.png?raw=true" alt="Movie_app">
-            <h3>\u{AC1C}\u{C778}\u{D504}\u{B85C}\u{C81D}\u{D2B8}(Web)</h3>            
-            <div class="detail">OMDb API\u{B97C} \u{C774}\u{C6A9}\u{D574} \u{B9CC}\u{B4E0} \u{C601}\u{D654} \u{AC80}\u{C0C9} \u{D648}\u{D398}\u{C774}\u{C9C0} \u{C785}\u{B2C8}\u{B2E4}.</div>
-            <div class="span">
-              <span>\u{AC1C}\u{C778}</span><span>\u{BC18}\u{C751}\u{D615}</span><span>\u{D37C}\u{BE14}\u{B9AC}\u{C2F1}</span>
+            <div class="two_project">
+              <h2>Movie_App</h2> 
+              <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/project/Movie-app.png?raw=true" alt="Movie_app">
+              <h3>\u{AC1C}\u{C778}\u{D504}\u{B85C}\u{C81D}\u{D2B8}(Web)</h3>            
+              <div class="detail">OMDb API\u{B97C} \u{C774}\u{C6A9}\u{D574} \u{B9CC}\u{B4E0} \u{C601}\u{D654} \u{AC80}\u{C0C9} \u{D648}\u{D398}\u{C774}\u{C9C0} \u{C785}\u{B2C8}\u{B2E4}.</div>
+              <div class="span">
+                <span>\u{AC1C}\u{C778}</span><span>\u{BC18}\u{C751}\u{D615}</span><span>\u{D37C}\u{BE14}\u{B9AC}\u{C2F1}</span>
+              </div>
+            </div>
+            <div class="two_project_hover">
+              <a href="https://github.com/JoSeungHwan/JoMovie-App" target="_blank">
+                <button class="btn">github</button>
+              </a>
             </div>
           </div> 
 
           <div class="three">
-            <h2>\u{C655}\u{AC00} \u{D0D5}\u{D6C4}\u{B8E8}</h2>
-            <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/projecting/nunastudy.png?raw=true" alt="Movie_app">
-            <h3>\u{D300}\u{D504}\u{B85C}\u{C81D}\u{D2B8}(Web)</h3> 
-            <div class="detail">\u{D300} \u{D504}\u{B85C}\u{C81D}\u{D2B8}\u{B85C} \u{C9C4}\u{D589}\u{D55C} \u{C655}\u{AC00}\u{D0D5}\u{D6C4}\u{B8E8} \u{D074}\u{B860}\u{CF54}\u{B529}\u{C785}\u{B2C8}\u{B2E4}.</div>
-            <div class="span">
-              <span>\u{D300}</span><span>\u{BC18}\u{C751}\u{D615}</span><span>\u{D074}\u{B860}\u{CF54}\u{B529}</span>
+            <div class="three_project">
+              <h2>\u{C655}\u{AC00} \u{D0D5}\u{D6C4}\u{B8E8}</h2>
+              <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/projecting/nunastudy.png?raw=true" alt="Movie_app">
+              <h3>\u{D300}\u{D504}\u{B85C}\u{C81D}\u{D2B8}(Web)</h3> 
+              <div class="detail">\u{D300} \u{D504}\u{B85C}\u{C81D}\u{D2B8}\u{B85C} \u{C9C4}\u{D589}\u{D55C} \u{C655}\u{AC00}\u{D0D5}\u{D6C4}\u{B8E8} \u{D074}\u{B860}\u{CF54}\u{B529}\u{C785}\u{B2C8}\u{B2E4}.</div>
+              <div class="span">
+                <span>\u{D300}</span><span>\u{BC18}\u{C751}\u{D615}</span><span>\u{D074}\u{B860}\u{CF54}\u{B529}</span>
+              </div>
+            </div>
+            <div class="three_project_hover">
+              <a href="https://github.com/kwon1341/nunaStudy-html-css" target="_blank">
+                <button class="btn">github</button>
+              </a>
             </div>
           </div>
 
           <div class="four">
-            <h2>Apple</h2>
-            <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/project/apple.png?raw=true" alt="Movie_app">
-            <h3>\u{AC1C}\u{C778}\u{D504}\u{B85C}\u{C81D}\u{D2B8}(Web)</h3>
-            <div class="detail">Apple \u{D648}\u{D398}\u{C774}\u{C9C0} \u{D074}\u{B860}\u{CF54}\u{B529}\u{C785}\u{B2C8}\u{B2E4}.</div>
-            <div class="span">
-              <span>\u{AC1C}\u{C778}</span><span>\u{BC18}\u{C751}\u{D615}</span><span>\u{D074}\u{B860}\u{CF54}\u{B529}</span>
+            <div class="four_project">
+              <h2>Apple</h2>
+              <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/project/apple.png?raw=true" alt="Movie_app">
+              <h3>\u{AC1C}\u{C778}\u{D504}\u{B85C}\u{C81D}\u{D2B8}(Web)</h3>
+              <div class="detail">Apple \u{D648}\u{D398}\u{C774}\u{C9C0} \u{D074}\u{B860}\u{CF54}\u{B529}\u{C785}\u{B2C8}\u{B2E4}.</div>
+              <div class="span">
+                <span>\u{AC1C}\u{C778}</span><span>\u{BC18}\u{C751}\u{D615}</span><span>\u{D074}\u{B860}\u{CF54}\u{B529}</span>
+              </div>
+            </div>
+            <div class="four_project_hover">
+              <a href="https://github.com/JoSeungHwan/apple-ipad" target="_blank">
+                <button class="btn">github</button>
+              </a>
             </div>
           </div>
 
           <div class="five">
-            <h2>Starbucks</h2>
-            <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/project/starbucks.png?raw=true" alt="Movie_app">
-            <h3>\u{AC1C}\u{C778}\u{D504}\u{B85C}\u{C81D}\u{D2B8}(Web)</h3> 
-            <div class="detail">\u{C2A4}\u{D0C0}\u{BC85}\u{C2A4} \u{D648}\u{D398}\u{C774}\u{C9C0} \u{D074}\u{B860}\u{CF54}\u{B529}\u{C785}\u{B2C8}\u{B2E4}.</div>
-            <div class="span">
-              <span>\u{AC1C}\u{C778}</span><span>Web</span><span>\u{D074}\u{B860}\u{CF54}\u{B529}</span>
+            <div class="five_project">
+              <h2>Starbucks</h2>
+              <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/project/starbucks.png?raw=true" alt="Movie_app">
+              <h3>\u{AC1C}\u{C778}\u{D504}\u{B85C}\u{C81D}\u{D2B8}(Web)</h3> 
+              <div class="detail">\u{C2A4}\u{D0C0}\u{BC85}\u{C2A4} \u{D648}\u{D398}\u{C774}\u{C9C0} \u{D074}\u{B860}\u{CF54}\u{B529}\u{C785}\u{B2C8}\u{B2E4}.</div>
+              <div class="span">
+                <span>\u{AC1C}\u{C778}</span><span>Web</span><span>\u{D074}\u{B860}\u{CF54}\u{B529}</span>
+              </div>
+            </div>
+            <div class="five_project_hover">
+              <a href="https://github.com/JoSeungHwan/starbucks" target="_blank">
+                <button class="btn">github</button>
+              </a>
             </div>
           </div>
 
         </div>
       </div>
+
 
       <div class="project_project_app">
         <div class="wrapper">
@@ -7700,24 +7741,39 @@ class Project extends (0, _jo.Component) {
           </div>
 
           <div class="nine">
-            <h2>Moo</h2>
-            <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/projecting/Moo.png?raw=true" alt="Movie_app">
-            <h3>\u{AC1C}\u{C778}\u{D504}\u{B85C}\u{C81D}\u{D2B8}(App)</h3>
-            <div class="detail">\u{BA54}\u{BAA8}\u{C7A5}\u{AE30}\u{B2A5}\u{ACFC} ToDoList\u{AE30}\u{B2A5}\u{C744} \u{D569}\u{CE5C} \u{AC1C}\u{C778}\u{C77C}\u{C815}\u{AD00}\u{B9AC} APP \u{C785}\u{B2C8}\u{B2E4}.</div>
-            <div class="span">
-              <span>\u{AC1C}\u{C778}</span><span>APP</span><span>\u{C0AC}\u{C774}\u{B4DC}</span>
+            <div class="nine_project">
+              <h2>Moo</h2>
+              <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/projecting/Moo.png?raw=true" alt="Movie_app">
+              <h3>\u{AC1C}\u{C778}\u{D504}\u{B85C}\u{C81D}\u{D2B8}(App)</h3>
+              <div class="detail">\u{BA54}\u{BAA8}\u{C7A5}\u{AE30}\u{B2A5}\u{ACFC} ToDoList\u{AE30}\u{B2A5}\u{C744} \u{D569}\u{CE5C} \u{AC1C}\u{C778}\u{C77C}\u{C815}\u{AD00}\u{B9AC} APP \u{C785}\u{B2C8}\u{B2E4}.</div>
+              <div class="span">
+                <span>\u{AC1C}\u{C778}</span><span>APP</span><span>\u{C0AC}\u{C774}\u{B4DC}</span>
+              </div>
+            </div>
+            <div class="nine_project_hover">
+              <a href="https://github.com/JoSeungHwan/Moo-App" target="_blank">
+                <button class="btn">github</button>
+              </a>
             </div>
           </div>
 
           <div class="ten">
-            <h2>COVID19 \u{D604}\u{D669}\u{D310}</h2>
-            <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/projecting/COVID19.png?raw=true" alt="Movie_app">
-            <h3>\u{AC1C}\u{C778}\u{D504}\u{B85C}\u{C81D}\u{D2B8}(App)</h3> 
-            <div class="detail">Corona-19 API\u{B97C} \u{C774}\u{C6A9}\u{D574} \u{CF54}\u{B85C}\u{B098}\u{AC10}\u{C5FC} \u{D604}\u{D669}\u{D310} APP \u{C785}\u{B2C8}\u{B2E4}.</div>
-            <div class="span">
-              <span>\u{AC1C}\u{C778}</span><span>APP</span><span>\u{C0AC}\u{C774}\u{B4DC}</span>
+            <div class="ten_project">
+              <h2>COVID19 \u{D604}\u{D669}\u{D310}</h2>
+              <img src="https://github.com/JoSeungHwan/notepad/blob/master/img/projecting/COVID19.png?raw=true" alt="Movie_app">
+              <h3>\u{AC1C}\u{C778}\u{D504}\u{B85C}\u{C81D}\u{D2B8}(App)</h3> 
+              <div class="detail">Corona-19 API\u{B97C} \u{C774}\u{C6A9}\u{D574} \u{CF54}\u{B85C}\u{B098}\u{AC10}\u{C5FC} \u{D604}\u{D669}\u{D310} APP \u{C785}\u{B2C8}\u{B2E4}.</div>
+              <div class="span">
+                <span>\u{AC1C}\u{C778}</span><span>APP</span><span>\u{C0AC}\u{C774}\u{B4DC}</span>
+              </div>
+            </div>
+            <div class="ten_project_hover">
+              <a href="https://github.com/JoSeungHwan/COVID19-App" target="_blank">
+                <button class="btn">github</button>
+              </a>
             </div>
           </div>
+
         </div>
       </div>
     `;
@@ -7794,7 +7850,113 @@ class Project extends (0, _jo.Component) {
 }
 exports.default = Project;
 
-},{"../core/jo":"gH9Ow","scrollmagic":"1y1Qx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cdAjJ":[function(require,module,exports) {
+},{"../core/jo":"gH9Ow","scrollmagic":"1y1Qx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"UkhKh":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jo = require("../core/jo");
+var _scrollmagic = require("scrollmagic");
+class Introduction extends (0, _jo.Component) {
+    render() {
+        this.el.classList.add("intro");
+        this.el.innerHTML = /* html */ `
+      <h1>Introduction</h1>
+
+      <div class='introinner'>
+        <div class='introinner1'>
+          <div class='turn'>
+            <div class='turn1 back-to-position to-right delay-0'>
+              <div class='turn2'>
+                <div class='turn3'>
+                  <h3>\u{D504}\u{B860}\u{D2B8}\u{C5D4}\u{B4DC}\u{B85C} \u{C804}\u{D5A5}\u{D55C} \u{C774}\u{C720}?</h3>
+                  <div class='turn4'>
+                    \u{C571} \u{AC1C}\u{BC1C}\u{C744} \u{D558}\u{BA74}\u{C11C} \u{D504}\u{B860}\u{D2B8}\u{C5D4}\u{B4DC}\u{C5D0} \u{D765}\u{BBF8}\u{B97C} \u{AC00}\u{C84C}\u{ACE0}<br>
+                    \u{C6F9}\u{C0AC}\u{C774}\u{D2B8}\u{C758} \u{C544}\u{B984}\u{B2F5}\u{ACE0} \u{D30C}\u{C6CC}\u{D480}\u{D55C} \u{B3D9}\u{C801}\u{C778} \u{C0AC}\u{C6A9}\u{C790} \u{C778}\u{D130}\u{D398}\u{C774}\u{C2A4}\u{B97C} \u{BCF4}\u{ACE0}<br>
+                    \u{C800}\u{B3C4} \u{C800}\u{B7F0} \u{D30C}\u{C6CC}\u{D480}\u{D55C} \u{C0AC}\u{C6A9}\u{C790} \u{C778}\u{D130}\u{D398}\u{C774}\u{C2A4}\u{B97C} \u{B9CC}\u{B4E4}\u{ACE0} \u{C2F6}\u{B2E4}\u{B294} \u{C0DD}\u{AC01}\u{C73C}\u{B85C} \u{C804}\u{D5A5}\u{C744} \u{ACB0}\u{C2EC}\u{D558}\u{C600}\u{C2B5}\u{B2C8}\u{B2E4}<br>
+                    \u{B2E4}\u{C591}\u{D55C} \u{D504}\u{B808}\u{C784}\u{C6CC}\u{D06C}\u{C640} \u{B77C}\u{C774}\u{BE0C}\u{B7EC}\u{B9AC}\u{B97C} \u{B3C4}\u{C785}\u{D574} \u{C0AC}\u{C6A9}\u{C790}\u{C5D0}\u{AC8C} \u{B2E4}\u{C591}\u{D55C} \u{C11C}\u{BE44}\u{C2A4}\u{B97C} \u{C120}\u{BCF4}\u{C774}\u{ACE0} \u{C2F6}\u{C2B5}\u{B2C8}\u{B2E4}.
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class='work'>
+            <div class='work1 back-to-position to-left delay-0'>
+              <div class='work2'>
+                <div class='work3'>
+                  <h3>\u{C77C}\u{C5D0} \u{C788}\u{C5B4} \u{AC00}\u{C7A5} \u{C911}\u{C694}\u{D558}\u{AC8C} \u{C0DD}\u{AC01}\u{D558}\u{B294} \u{AC83}\u{C774} \u{C788}\u{B2E4}\u{BA74}?</h3>
+                  <div class='work4'>
+                    \u{C81C}\u{AC00} \u{C0AC}\u{C6A9}\u{C790} \u{C785}\u{C7A5}\u{C5D0}\u{C11C} \u{C0DD}\u{AC01}\u{D558}\u{B294} \u{AC1C}\u{BC1C}\u{C744} \u{CD94}\u{AD6C}\u{D569}\u{B2C8}\u{B2E4}.<br>
+                    \u{BCF4}\u{AE30} \u{C26C}\u{C6B4} UI\u{C640} \u{CD5C}\u{ACE0}\u{C758} \u{D37C}\u{D3EC}\u{BA3C}\u{C2A4}\u{B85C}<br>\u{B2E4}\u{C591}\u{D55C} \u{C0AC}\u{C6A9}\u{C790}\u{B4E4}\u{C774} \u{D3B8}\u{B9AC}\u{D558}\u{AC8C} \u{C11C}\u{BE44}\u{C2A4}\u{B97C} \u{C774}\u{C6A9}\u{D560} \u{C218} \u{C788}\u{B3C4}\u{B85D} \u{AE30}\u{C5EC}\u{D558}\u{ACE0}\u{C790} \u{D569}\u{B2C8}\u{B2E4}.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class='myself'>
+            <div class='myself1 back-to-position to-right delay-0'>
+              <div class='myself2'>
+                <div class='myself3'>
+                  <h3>\u{B354} \u{C790}\u{C138}\u{D55C} \u{C800}\u{B97C} \u{C54C}\u{ACE0} \u{C2F6}\u{C5B4}\u{C694}!</h3>
+                  <div class='myself4'>
+                    \u{B354} \u{C790}\u{C138}\u{D55C} \u{B0B4}\u{C6A9}\u{C740} \u{B178}\u{C158}\u{C5D0} \u{C790}\u{C138}\u{D788} \u{C815}\u{B9AC} \u{D574}\u{B1A8}\u{C2B5}\u{B2C8}\u{B2E4}<br>
+                    \u{D55C}\u{BC88} \u{B4E4}\u{B824}\u{C8FC}\u{C154}\u{C11C} \u{AD6C}\u{ACBD}\u{D55C}\u{BC88} \u{D574}\u{C8FC}\u{C2E0}\u{B2E4}\u{BA74} \u{AC10}\u{C0AC}\u{D558}\u{ACA0}\u{C2B5}\u{B2C8}\u{B2E4}!
+                  </div>
+                  <div class='myselfbtn'>
+                    <a href='https://south-kicker-499.notion.site/Developer-e65fa672d22e45d3885e09503206a495?pvs=4' target='_blank'>
+                      <button class='btn'>notion</button>
+                    </a>
+                    <a href='https://github.com/JoSeungHwan' target='_blank'>
+                      <button class='btn'>github</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+        const turnEls = this.el.querySelector(".turn");
+        const workEls = this.el.querySelector(".work");
+        const myselfEls = this.el.querySelector(".myself");
+        var controller = new _scrollmagic.Controller();
+        // var setMultipleClasses = TweenMax.to('.work', 0.5, {
+        //   className: 'show',
+        // });
+        var scene = new _scrollmagic.Scene({
+            // duration: 100,
+            // offset: 200,
+            triggerElement: turnEls,
+            triggerHook: 0.8
+        });
+        scene.setClassToggle(turnEls, "show");
+        // scene.setTween(setMultipleClasses);
+        scene.addTo(controller);
+        var scene = new _scrollmagic.Scene({
+            // duration: 100,
+            // offset: 200,
+            triggerElement: workEls,
+            triggerHook: 0.8
+        });
+        scene.setClassToggle(workEls, "show");
+        // scene.setTween(setMultipleClasses);
+        scene.addTo(controller);
+        var scene = new _scrollmagic.Scene({
+            // duration: 100,
+            // offset: 200,
+            triggerElement: myselfEls,
+            triggerHook: 0.8
+        });
+        scene.setClassToggle(myselfEls, "show");
+        // scene.setTween(setMultipleClasses);
+        scene.addTo(controller);
+    }
+}
+exports.default = Introduction;
+
+},{"../core/jo":"gH9Ow","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","scrollmagic":"1y1Qx"}],"cdAjJ":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jo = require("../core/jo");

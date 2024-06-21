@@ -7901,7 +7901,9 @@ class Introduction extends (0, _jo.Component) {
                   <h3>\u{C77C}\u{C5D0} \u{C788}\u{C5B4} \u{AC00}\u{C7A5} \u{C911}\u{C694}\u{D558}\u{AC8C} \u{C0DD}\u{AC01}\u{D558}\u{B294} \u{AC83}\u{C774} \u{C788}\u{B2E4}\u{BA74}?</h3>
                   <div class='work4'>
                     \u{C81C}\u{AC00} \u{C0AC}\u{C6A9}\u{C790} \u{C785}\u{C7A5}\u{C5D0}\u{C11C} \u{C0DD}\u{AC01}\u{D558}\u{B294} \u{AC1C}\u{BC1C}\u{C744} \u{CD94}\u{AD6C}\u{D569}\u{B2C8}\u{B2E4}.<br>
-                    \u{BCF4}\u{AE30} \u{C26C}\u{C6B4} UI\u{C640} \u{CD5C}\u{ACE0}\u{C758} \u{D37C}\u{D3EC}\u{BA3C}\u{C2A4}\u{B85C}<br>\u{B2E4}\u{C591}\u{D55C} \u{C0AC}\u{C6A9}\u{C790}\u{B4E4}\u{C774} \u{D3B8}\u{B9AC}\u{D558}\u{AC8C} \u{C11C}\u{BE44}\u{C2A4}\u{B97C} \u{C774}\u{C6A9}\u{D560} \u{C218} \u{C788}\u{B3C4}\u{B85D} \u{AE30}\u{C5EC}\u{D558}\u{ACE0}\u{C790} \u{D569}\u{B2C8}\u{B2E4}.
+                    \u{BCF4}\u{AE30} \u{C26C}\u{C6B4} UI\u{C640} \u{CD5C}\u{ACE0}\u{C758} \u{D37C}\u{D3EC}\u{BA3C}\u{C2A4}\u{B85C}<br>
+                    \u{B2E4}\u{C591}\u{D55C} \u{C0AC}\u{C6A9}\u{C790}\u{B4E4}\u{C774} \u{D3B8}\u{B9AC}\u{D558}\u{AC8C} \u{C11C}\u{BE44}\u{C2A4}\u{B97C} \u{C774}\u{C6A9}\u{D560} \u{C218} \u{C788}\u{B3C4}\u{B85D} \u{AE30}\u{C5EC}\u{D558}\u{ACE0}\u{C790} \u{D569}\u{B2C8}\u{B2E4}.<br>
+                    \u{ADF8}\u{B9AC}\u{ACE0} \u{AC19}\u{C774} \u{C77C}\u{D558}\u{B294} \u{B3D9}\u{B8CC}, \u{D300}\u{C6D0}\u{B4E4}\u{ACFC} \u{CD5C}\u{C0C1}\u{C758} \u{ACB0}\u{ACFC}\u{B97C} \u{B0BC}\u{C218}\u{C788}\u{B3C4}\u{B85D} \u{CD5C}\u{C120}\u{C744} \u{B2E4}\u{D560}\u{AC83}\u{C785}\u{B2C8}\u{B2E4}
                   </div>
                 </div>
               </div>

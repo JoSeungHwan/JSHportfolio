@@ -5017,7 +5017,7 @@ class Aboutme extends (0, _jo.Component) {
             <div>(\u{C8FC})\u{CC28}\u{D2B8}\u{C5F0}\u{AD6C}\u{C18C} \u{C5D0}\u{C11C} \u{C9C4}\u{D589}\u{D55C} \u{D504}\u{B85C}\u{C81D}\u{D2B8}</div>
             <br/>
             <div>PowerGraphics \u{BAA8}\u{BC14}\u{C77C} \u{C99D}\u{AD8C}\u{CC28}\u{D2B8} \u{C194}\u{B8E8}\u{C158}</div>
-            <div>\u{C81C}\u{AC00} \u{C774} \u{D504}\u{B85C}\u{C81D}\u{D2B8}\u{C5D0} \u{D3EC}\u{C9C0}\u{C158}\u{C740} IOS \u{C804}\u{CCB4}\u{C801}\u{C778} \u{AC83}\u{C744} \u{B2F4}\u{B2F9}\u{D588}\u{C73C}\u{BA70}<br/>
+            <div>\u{C81C}\u{AC00} \u{C774} \u{D504}\u{B85C}\u{C81D}\u{D2B8}\u{C5D0} \u{D3EC}\u{C9C0}\u{C158}\u{C740} IOS\u{C571} \u{D504}\u{B860}\u{D2B8}\u{C5D4}\u{B4DC}, \u{BC31}\u{C5D4}\u{B4DC} \u{B2F4}\u{B2F9}\u{D588}\u{C73C}\u{BA70}<br/>
                 \u{AE30}\u{C874} PowerGraphics \u{D504}\u{B85C}\u{ADF8}\u{B7A8}\u{C5D0}\u{C11C} \u{B0A9}\u{D488}\u{B41C} \u{ACF3}\u{C5D0} \u{C720}\u{C9C0}\u{BCF4}\u{C218}\u{B97C} \u{D558}\u{BA74}\u{C11C}<br/>
                 \u{BC84}\u{C83C}\u{C744} \u{C5C5}\u{ADF8}\u{B808}\u{C774}\u{B4DC} \u{D558}\u{C5EC} PowerGraphics ver3 \u{C5D0}\u{C120} \u{B514}\u{C790}\u{C778}\u{ACFC}<br/>
                 \u{C131}\u{B2A5} \u{AE30}\u{B2A5} \u{BAA8}\u{B4E0} \u{AC83}\u{C744} \u{C5C5}\u{ADF8}\u{B808}\u{C774}\u{B4DC} \u{D558}\u{C5EC} <br/>
@@ -5044,8 +5044,8 @@ class Aboutme extends (0, _jo.Component) {
             <div>\u{C774}\u{BAA8}\u{B9CC}\u{C138}, \u{D558}\u{C774}\u{BE0C}\u{B9AC}\u{B4DC}\u{C571}</div>
             <div>\u{C81C}\u{AC00} \u{C774} \u{D504}\u{B85C}\u{C81D}\u{D2B8}\u{C5D0} \u{D3EC}\u{C9C0}\u{C158}\u{C740} \u{C571}\u{AC1C}\u{BC1C} \u{C804}\u{CCB4}\u{C801}\u{C778} \u{AC83}\u{C744} \u{B2F4}\u{B2F9}\u{D588}\u{C73C}\u{BA70}<br/>
                 \u{C774}\u{BAA8}\u{B9CC}\u{C138}\u{C5D0}\u{C11C} IOS\u{D504}\u{B860}\u{D2B8}\u{C5D4}\u{B4DC}\u{C640} \u{B370}\u{C774}\u{D130}\u{AD00}\u{B9AC}<br/>
-                \u{D558}\u{C774}\u{BE0C}\u{B9AC}\u{B4DC}\u{C571}\u{C5D0}\u{C11C} Andriod, IOS \u{C571}\u{AC1C}\u{BC1C} \u{BAA8}\u{B4E0}\u{AC83}\u{C744} \u{B2F4}\u{B2F9}\u{D558}\u{C600}\u{C73C}\u{BA70}<br/>
-                \u{ACE0}\u{AC1D}\u{C0AC} \u{D53C}\u{B4DC}\u{BC37}\u{C744} \u{BC1B}\u{C544} \u{C720}\u{C9C0}\u{BCF4}\u{C218}\u{D558}\u{BA70} \u{C571}\u{C744} \u{CD9C}\u{C2DC}\u{D588}\u{C2B5}\u{B2C8}\u{B2E4}
+                \u{D558}\u{C774}\u{BE0C}\u{B9AC}\u{B4DC}\u{C571}\u{C5D0}\u{C11C} Andriod\u{C571} \u{D504}\u{B860}\u{D2B8}\u{C5D4}\u{B4DC} \u{BC31}\u{C5D4}\u{B4DC}, IOS\u{C571} \u{D504}\u{B860}\u{D2B8}\u{C5D4}\u{B4DC}, \u{BC31}\u{C5D4}\u{B4DC}\u{B97C} \u{B2F4}\u{B2F9}\u{D558}\u{C600}\u{C73C}\u{BA70}<br/>
+                \u{ACE0}\u{AC1D}\u{C0AC} \u{D53C}\u{B4DC}\u{BC31}\u{C744} \u{BC1B}\u{C544} \u{C720}\u{C9C0}\u{BCF4}\u{C218}\u{D558}\u{BA70} \u{C571}\u{C744} \u{CD9C}\u{C2DC}\u{D588}\u{C2B5}\u{B2C8}\u{B2E4}
             </div>
             <div class="skills2">
               <img class="xcode" src="https://github.com/JoSeungHwan/notepad/blob/master/img/skills/xocde.png?raw=true" alt="xcode">
@@ -7880,7 +7880,7 @@ class Introduction extends (0, _jo.Component) {
             <div class='turn1 back-to-position to-right delay-0'>
               <div class='turn2'>
                 <div class='turn3'>
-                  <h3>\u{D504}\u{B860}\u{D2B8}\u{C5D4}\u{B4DC}\u{B85C} \u{C804}\u{D5A5}\u{D55C} \u{C774}\u{C720}?</h3>
+                  <h3>\u{C6F9} \u{D504}\u{B860}\u{D2B8}\u{C5D4}\u{B4DC}\u{B85C} \u{C804}\u{D5A5}\u{D55C} \u{C774}\u{C720}?</h3>
                   <div class='turn4'>
                     \u{C571} \u{D504}\u{B860}\u{D2B8}\u{C5D4}\u{B4DC} \u{AC1C}\u{BC1C}\u{C744} \u{D558}\u{BA74}\u{C11C} \u{C790}\u{C5F0}\u{C2A4}\u{B808} \u{C6F9} \u{D504}\u{B860}\u{D2B8}\u{C5D4}\u{B4DC}\u{C5D0} \u{D765}\u{BBF8}\u{B97C} \u{AC00}\u{C84C}\u{ACE0}<br>
                     \u{C571}\u{C5D0}\u{B294} \u{C5C6}\u{B294} \u{C6F9}\u{B9CC}\u{C758} \u{C544}\u{B984}\u{B2F5}\u{ACE0} \u{D30C}\u{C6CC}\u{D480}\u{D55C} \u{B3D9}\u{C801}\u{C778} \u{C0AC}\u{C6A9}\u{C790} \u{C778}\u{D130}\u{D398}\u{C774}\u{C2A4}\u{B97C} \u{BCF4}\u{ACE0}<br>

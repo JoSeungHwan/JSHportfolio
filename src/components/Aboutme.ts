@@ -23,7 +23,7 @@ export default class Aboutme extends Component {
             <div>(주)차트연구소 에서 진행한 프로젝트</div>
             <br/>
             <div>PowerGraphics 모바일 증권차트 솔루션</div>
-            <div>제가 이 프로젝트에 포지션은 IOS 전체적인 것을 담당했으며<br/>
+            <div>제가 이 프로젝트에 포지션은 IOS앱 프론트엔드, 백엔드 담당했으며<br/>
                 기존 PowerGraphics 프로그램에서 납품된 곳에 유지보수를 하면서<br/>
                 버젼을 업그레이드 하여 PowerGraphics ver3 에선 디자인과<br/>
                 성능 기능 모든 것을 업그레이드 하여 <br/>
@@ -50,8 +50,8 @@ export default class Aboutme extends Component {
             <div>이모만세, 하이브리드앱</div>
             <div>제가 이 프로젝트에 포지션은 앱개발 전체적인 것을 담당했으며<br/>
                 이모만세에서 IOS프론트엔드와 데이터관리<br/>
-                하이브리드앱에서 Andriod, IOS 앱개발 모든것을 담당하였으며<br/>
-                고객사 피드밷을 받아 유지보수하며 앱을 출시했습니다
+                하이브리드앱에서 Andriod앱 프론트엔드 백엔드, IOS앱 프론트엔드, 백엔드를 담당하였으며<br/>
+                고객사 피드백을 받아 유지보수하며 앱을 출시했습니다
             </div>
             <div class="skills2">
               <img class="xcode" src="https://github.com/JoSeungHwan/notepad/blob/master/img/skills/xocde.png?raw=true" alt="xcode">

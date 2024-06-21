@@ -16,7 +16,7 @@ export default class Introduction extends Component {
             <div class='turn1 back-to-position to-right delay-0'>
               <div class='turn2'>
                 <div class='turn3'>
-                  <h3>프론트엔드로 전향한 이유?</h3>
+                  <h3>웹 프론트엔드로 전향한 이유?</h3>
                   <div class='turn4'>
                     앱 프론트엔드 개발을 하면서 자연스레 웹 프론트엔드에 흥미를 가졌고<br>
                     앱에는 없는 웹만의 아름답고 파워풀한 동적인 사용자 인터페이스를 보고<br>

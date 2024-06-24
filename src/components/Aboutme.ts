@@ -27,7 +27,7 @@ export default class Aboutme extends Component {
                 기존 PowerGraphics 프로그램에서 납품된 곳에 유지보수를 하면서<br/>
                 버젼을 업그레이드 하여 PowerGraphics ver3 에선 디자인과<br/>
                 성능 기능 모든 것을 업그레이드 하여 <br/>
-                은행, 증권사 납품 준비를 했습니다
+                은행, 증권사 납품을 했습니다
             </div>
             <div class="skills1">
               <img class="xcode" src="https://github.com/JoSeungHwan/notepad/blob/master/img/skills/xocde.png?raw=true" alt="xcode">

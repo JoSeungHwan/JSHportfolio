@@ -5021,7 +5021,7 @@ class Aboutme extends (0, _jo.Component) {
                 \u{AE30}\u{C874} PowerGraphics \u{D504}\u{B85C}\u{ADF8}\u{B7A8}\u{C5D0}\u{C11C} \u{B0A9}\u{D488}\u{B41C} \u{ACF3}\u{C5D0} \u{C720}\u{C9C0}\u{BCF4}\u{C218}\u{B97C} \u{D558}\u{BA74}\u{C11C}<br/>
                 \u{BC84}\u{C83C}\u{C744} \u{C5C5}\u{ADF8}\u{B808}\u{C774}\u{B4DC} \u{D558}\u{C5EC} PowerGraphics ver3 \u{C5D0}\u{C120} \u{B514}\u{C790}\u{C778}\u{ACFC}<br/>
                 \u{C131}\u{B2A5} \u{AE30}\u{B2A5} \u{BAA8}\u{B4E0} \u{AC83}\u{C744} \u{C5C5}\u{ADF8}\u{B808}\u{C774}\u{B4DC} \u{D558}\u{C5EC} <br/>
-                \u{C740}\u{D589}, \u{C99D}\u{AD8C}\u{C0AC} \u{B0A9}\u{D488} \u{C900}\u{BE44}\u{B97C} \u{D588}\u{C2B5}\u{B2C8}\u{B2E4}
+                \u{C740}\u{D589}, \u{C99D}\u{AD8C}\u{C0AC} \u{B0A9}\u{D488}\u{C744} \u{D588}\u{C2B5}\u{B2C8}\u{B2E4}
             </div>
             <div class="skills1">
               <img class="xcode" src="https://github.com/JoSeungHwan/notepad/blob/master/img/skills/xocde.png?raw=true" alt="xcode">

@@ -6,13 +6,13 @@ export default class Headline extends Component {
     this.el.classList.add('headline');
     this.el.innerHTML = /* html */ `
       <h1 class="fade-in">
-        <span>Front-End</span><br />
-        프론트엔드 개발자<br/>
+        <span>다양한 프로젝트 경험으로</span><br/>
+        경험이 많은<br/>
         조승환 입니다.<br />
       </h1>
       <p class="fade-in">
         사용자에게 최고의 경험과 편의성을 제공할 수 있는<br/>
-        개발자로 성장하겠습니다.
+        사람으로 성장하겠습니다.
       </p>
       <img class="fade-in" src="https://github.com/JoSeungHwan/notepad/blob/master/img/myimg/myjo.png?raw=true" alt="user">
       <!-- <img src="" href=".../img/jo.png" alt="user">  -->

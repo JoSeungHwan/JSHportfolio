@@ -931,13 +931,13 @@ class Headline extends (0, _jo.Component) {
         this.el.classList.add("headline");
         this.el.innerHTML = /* html */ `
       <h1 class="fade-in">
-        <span>Front-End</span><br />
-        \u{D504}\u{B860}\u{D2B8}\u{C5D4}\u{B4DC} \u{AC1C}\u{BC1C}\u{C790}<br/>
+        <span>\u{B2E4}\u{C591}\u{D55C} \u{D504}\u{B85C}\u{C81D}\u{D2B8} \u{ACBD}\u{D5D8}\u{C73C}\u{B85C}</span><br/>
+        \u{ACBD}\u{D5D8}\u{C774} \u{B9CE}\u{C740}<br/>
         \u{C870}\u{C2B9}\u{D658} \u{C785}\u{B2C8}\u{B2E4}.<br />
       </h1>
       <p class="fade-in">
         \u{C0AC}\u{C6A9}\u{C790}\u{C5D0}\u{AC8C} \u{CD5C}\u{ACE0}\u{C758} \u{ACBD}\u{D5D8}\u{ACFC} \u{D3B8}\u{C758}\u{C131}\u{C744} \u{C81C}\u{ACF5}\u{D560} \u{C218} \u{C788}\u{B294}<br/>
-        \u{AC1C}\u{BC1C}\u{C790}\u{B85C} \u{C131}\u{C7A5}\u{D558}\u{ACA0}\u{C2B5}\u{B2C8}\u{B2E4}.
+        \u{C0AC}\u{B78C}\u{C73C}\u{B85C} \u{C131}\u{C7A5}\u{D558}\u{ACA0}\u{C2B5}\u{B2C8}\u{B2E4}.
       </p>
       <img class="fade-in" src="https://github.com/JoSeungHwan/notepad/blob/master/img/myimg/myjo.png?raw=true" alt="user">
       <!-- <img src="" href=".../img/jo.png" alt="user">  -->
@@ -7876,17 +7876,14 @@ class Introduction extends (0, _jo.Component) {
 
       <div class='introinner'>
         <div class='introinner1'>
+          
           <div class='turn'>
             <div class='turn1 back-to-position to-right delay-0'>
               <div class='turn2'>
                 <div class='turn3'>
-                  <h3>\u{C6F9} \u{D504}\u{B860}\u{D2B8}\u{C5D4}\u{B4DC}\u{B85C} \u{C804}\u{D5A5}\u{D55C} \u{C774}\u{C720}?</h3>
+                  <h3>\u{AC04}\u{B2E8}\u{D55C} \u{C790}\u{AE30}\u{C18C}\u{AC1C}\u{B97C} \u{D574}\u{C8FC}\u{C138}\u{C694}</h3>
                   <div class='turn4'>
-                    \u{C571} \u{D504}\u{B860}\u{D2B8}\u{C5D4}\u{B4DC} \u{AC1C}\u{BC1C}\u{C744} \u{D558}\u{BA74}\u{C11C} \u{C790}\u{C5F0}\u{C2A4}\u{B808} \u{C6F9} \u{D504}\u{B860}\u{D2B8}\u{C5D4}\u{B4DC}\u{C5D0} \u{D765}\u{BBF8}\u{B97C} \u{AC00}\u{C84C}\u{ACE0}<br>
-                    \u{C571}\u{C5D0}\u{B294} \u{C5C6}\u{B294} \u{C6F9}\u{B9CC}\u{C758} \u{C544}\u{B984}\u{B2F5}\u{ACE0} \u{D30C}\u{C6CC}\u{D480}\u{D55C} \u{B3D9}\u{C801}\u{C778} \u{C0AC}\u{C6A9}\u{C790} \u{C778}\u{D130}\u{D398}\u{C774}\u{C2A4}\u{B97C} \u{BCF4}\u{ACE0}<br>
-                    \u{C800}\u{B3C4} \u{C6F9}\u{B9CC}\u{C758} \u{D30C}\u{C6CC}\u{D480}\u{D55C} \u{C0AC}\u{C6A9}\u{C790} \u{C778}\u{D130}\u{D398}\u{C774}\u{C2A4}\u{B97C} \u{B9CC}\u{B4E4}\u{ACE0} \u{C2F6}\u{B2E4}\u{B294} \u{C0DD}\u{AC01}\u{C73C}\u{B85C} \u{C804}\u{D5A5}\u{C744} \u{ACB0}\u{C2EC}\u{D558}\u{C600}\u{C2B5}\u{B2C8}\u{B2E4}<br>
-                    \u{C571} \u{D504}\u{B860}\u{D2B8}\u{C5D4}\u{B4DC}\u{B85C} \u{B2E4}\u{C838}\u{C9C4} \u{D0C4}\u{D0C4}\u{D55C} \u{AE30}\u{CD08}\u{C640}<br>
-                    \u{B2E4}\u{C591}\u{D55C} \u{D504}\u{B808}\u{C784}\u{C6CC}\u{D06C}\u{C640} \u{B77C}\u{C774}\u{BE0C}\u{B7EC}\u{B9AC}\u{B97C} \u{B3C4}\u{C785}\u{D574} \u{C0AC}\u{C6A9}\u{C790}\u{C5D0}\u{AC8C} \u{B2E4}\u{C591}\u{D55C} \u{C11C}\u{BE44}\u{C2A4}\u{B97C} \u{C120}\u{BCF4}\u{C774}\u{ACE0} \u{C2F6}\u{C2B5}\u{B2C8}\u{B2E4}.
+                  \u{C800}\u{B294} \u{B04A}\u{C784}\u{C5C6}\u{B294} \u{C5F4}\u{C815}\u{ACFC} \u{C0C8}\u{B85C}\u{C6B4} \u{AE30}\u{C220}\u{C744} \u{BC30}\u{C6B0}\u{B294} \u{AC83}\u{C744} \u{C990}\u{AE30}\u{B294} \u{C870}\u{C2B9}\u{D658}\u{C785}\u{B2C8}\u{B2E4}. 
                     
                   </div>
                 </div>
@@ -7900,10 +7897,26 @@ class Introduction extends (0, _jo.Component) {
                 <div class='work3'>
                   <h3>\u{C77C}\u{C5D0} \u{C788}\u{C5B4} \u{AC00}\u{C7A5} \u{C911}\u{C694}\u{D558}\u{AC8C} \u{C0DD}\u{AC01}\u{D558}\u{B294} \u{AC83}\u{C774} \u{C788}\u{B2E4}\u{BA74}?</h3>
                   <div class='work4'>
-                    \u{C81C}\u{AC00} \u{C0AC}\u{C6A9}\u{C790} \u{C785}\u{C7A5}\u{C5D0}\u{C11C} \u{C0DD}\u{AC01}\u{D558}\u{B294} \u{AC1C}\u{BC1C}\u{C744} \u{CD94}\u{AD6C}\u{D569}\u{B2C8}\u{B2E4}.<br>
-                    \u{BCF4}\u{AE30} \u{C26C}\u{C6B4} UI\u{C640} \u{CD5C}\u{ACE0}\u{C758} \u{D37C}\u{D3EC}\u{BA3C}\u{C2A4}\u{B85C}<br>
-                    \u{B2E4}\u{C591}\u{D55C} \u{C0AC}\u{C6A9}\u{C790}\u{B4E4}\u{C774} \u{D3B8}\u{B9AC}\u{D558}\u{AC8C} \u{C11C}\u{BE44}\u{C2A4}\u{B97C} \u{C774}\u{C6A9}\u{D560} \u{C218} \u{C788}\u{B3C4}\u{B85D} \u{AE30}\u{C5EC}\u{D558}\u{ACE0}\u{C790} \u{D569}\u{B2C8}\u{B2E4}.<br>
-                    \u{ADF8}\u{B9AC}\u{ACE0} \u{AC19}\u{C774} \u{C77C}\u{D558}\u{B294} \u{B3D9}\u{B8CC}, \u{D300}\u{C6D0}\u{B4E4}\u{ACFC} \u{CD5C}\u{C0C1}\u{C758} \u{ACB0}\u{ACFC}\u{B97C} \u{B0BC}\u{C218}\u{C788}\u{B3C4}\u{B85D} \u{CD5C}\u{C120}\u{C744} \u{B2E4}\u{D560}\u{AC83}\u{C785}\u{B2C8}\u{B2E4}
+                  \u{C77C}\u{C5D0} \u{C788}\u{C5B4} \u{AC19}\u{C774} \u{C77C}\u{D558}\u{B294} \u{D300}\u{C6D0}\u{B4E4}\u{ACFC} \u{D300}\u{C6CC}\u{D06C}\u{C640}<br/>
+                  \u{C6B0}\u{B9AC}\u{AC00} \u{D574}\u{B0B4}\u{C5B4}\u{C57C} \u{D560} \u{ACB0}\u{ACFC}\u{C5D0} \u{B300}\u{D574} \u{C758}\u{B17C}\u{D558}\u{ACE0} \u{C11C}\u{B85C} \u{C870}\u{C728}\u{D558}\u{BA70} <br/>
+                  \u{C644}\u{BCBD}\u{D55C} \u{ACB0}\u{ACFC}\u{B97C} \u{C5BB}\u{C744} \u{C218} \u{C788}\u{B3C4}\u{B85D} \u{B178}\u{B825}\u{D558}\u{B294} \u{AC83}\u{C774} \u{C81C}\u{C77C} \u{C911}\u{C694}\u{D558}\u{B2E4}\u{ACE0} \u{C0DD}\u{AC01}\u{D569}\u{B2C8}\u{B2E4} <br/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class='forte'>
+            <div class='forte1 back-to-position to-right delay-0'>
+              <div class='forte2'>
+                <div class='forte3'>
+                  <h3>\u{B2F9}\u{C2E0}\u{B9CC}\u{C758} \u{AC15}\u{C810}\u{C774} \u{C788}\u{B2E4}\u{BA74}?</h3>
+                  <div class='forte4'>
+                    \u{C5EC}\u{B7EC} \u{C0AC}\u{D68C}\u{C0DD}\u{D65C} \u{ACBD}\u{D5D8}\u{ACFC} \u{D65C}\u{BC1C}\u{D55C} \u{C778}\u{AC04}\u{AD00}\u{ACC4}\u{ACBD}\u{D5D8}\u{C73C}\u{B85C} <br/>
+                    \u{C5B4}\u{B5A4} \u{C0C1}\u{D669}\u{C774}\u{B4E0} \u{C720}\u{C5F0}\u{D558}\u{AC8C} \u{B300}\u{CC98}\u{D560} \u{C218} \u{C788}\u{C73C}\u{BA70} \u{D300}\u{C5D0} \u{C798} \u{B179}\u{C544}\u{B4E4}\u{C5B4} \u{C801}\u{C751}\u{C744} \u{C798} \u{D560} \u{C218}\u{C788}\u{C2B5}\u{B2C8}\u{B2E4}<br/>
+                    \u{ADF8}\u{B9AC}\u{ACE0} \u{C804} \u{BB38}\u{C81C} \u{D574}\u{ACB0}\u{B2A5}\u{B825}\u{C774} \u{B6F0}\u{C5B4}\u{B0A9}\u{B2C8}\u{B2E4}<br/>
+                    \u{C5EC}\u{B7EC}\u{AC00}\u{C9C0} \u{C77C}\u{C744} \u{D558}\u{BA70} \u{B2E4}\u{C591}\u{D55C} \u{BB38}\u{C81C}\u{B97C} \u{ACBD}\u{D5D8}\u{D558}\u{ACE0} \u{D574}\u{ACB0}\u{D568}\u{C73C}\u{B85C} <br/>
+                    \u{C55E}\u{C73C}\u{B85C}\u{B3C4} \u{C720}\u{B3D9}\u{C801}\u{C774}\u{ACE0} \u{B9E4}\u{C6B0} \u{D6A8}\u{C728}\u{C801}\u{C778} \u{BC29}\u{BC95}\u{C73C}\u{B85C} \u{BB38}\u{C81C} \u{D574}\u{ACB0}\u{C744} \u{D560} \u{C218} \u{C788}\u{C2B5}\u{B2C8}\u{B2E4}.<br/>
                   </div>
                 </div>
               </div>
@@ -7911,7 +7924,7 @@ class Introduction extends (0, _jo.Component) {
           </div>
 
           <div class='myself'>
-            <div class='myself1 back-to-position to-right delay-0'>
+            <div class='myself1 back-to-position to-left delay-0'>
               <div class='myself2'>
                 <div class='myself3'>
                   <h3>\u{B354} \u{C790}\u{C138}\u{D55C} \u{C800}\u{B97C} \u{C54C}\u{ACE0} \u{C2F6}\u{C5B4}\u{C694}!</h3>
@@ -7931,11 +7944,13 @@ class Introduction extends (0, _jo.Component) {
               </div>
             </div>
           </div>
+
         </div>
       </div>
     `;
         const turnEls = this.el.querySelector(".turn");
         const workEls = this.el.querySelector(".work");
+        const forteEls = this.el.querySelector(".forte");
         const myselfEls = this.el.querySelector(".myself");
         var controller = new _scrollmagic.Controller();
         // var setMultipleClasses = TweenMax.to('.work', 0.5, {
@@ -7957,6 +7972,15 @@ class Introduction extends (0, _jo.Component) {
             triggerHook: 0.8
         });
         scene.setClassToggle(workEls, "show");
+        // scene.setTween(setMultipleClasses);
+        scene.addTo(controller);
+        var scene = new _scrollmagic.Scene({
+            // duration: 100,
+            // offset: 200,
+            triggerElement: forteEls,
+            triggerHook: 0.8
+        });
+        scene.setClassToggle(forteEls, "show");
         // scene.setTween(setMultipleClasses);
         scene.addTo(controller);
         var scene = new _scrollmagic.Scene({

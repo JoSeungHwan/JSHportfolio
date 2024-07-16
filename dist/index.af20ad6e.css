@@ -276,7 +276,12 @@ footer a:hover {
   line-height: 1;
 }
 
-.headline h1 span, .headline p {
+.headline h1 span {
+  color: #0e111b;
+  font-weight: 600;
+}
+
+.headline p {
   color: #0e111b;
 }
 
@@ -787,8 +792,40 @@ footer a:hover {
   line-height: 1.6;
 }
 
-.intro .myself1 {
+.intro .forte1 {
   max-width: 700px;
+  margin: 20px;
+}
+
+.intro .forte2 {
+  background-color: #373737;
+  border-radius: .7rem;
+  padding: 20px;
+}
+
+.intro .forte3 h3 {
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.intro .forte4 {
+  color: #d3d3d3;
+  margin: 30px 0 10px;
+  font-family: "Noto+Sans+KR", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.intro .myself {
+  place-content: center end;
+  display: flex;
+}
+
+.intro .myself1 {
+  width: 700px;
   margin: 20px;
 }
 

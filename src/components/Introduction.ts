@@ -12,17 +12,14 @@ export default class Introduction extends Component {
 
       <div class='introinner'>
         <div class='introinner1'>
+          
           <div class='turn'>
             <div class='turn1 back-to-position to-right delay-0'>
               <div class='turn2'>
                 <div class='turn3'>
-                  <h3>웹 프론트엔드로 전향한 이유?</h3>
+                  <h3>간단한 자기소개를 해주세요</h3>
                   <div class='turn4'>
-                    앱 프론트엔드 개발을 하면서 자연스레 웹 프론트엔드에 흥미를 가졌고<br>
-                    앱에는 없는 웹만의 아름답고 파워풀한 동적인 사용자 인터페이스를 보고<br>
-                    저도 웹만의 파워풀한 사용자 인터페이스를 만들고 싶다는 생각으로 전향을 결심하였습니다<br>
-                    앱 프론트엔드로 다져진 탄탄한 기초와<br>
-                    다양한 프레임워크와 라이브러리를 도입해 사용자에게 다양한 서비스를 선보이고 싶습니다.
+                  저는 끊임없는 열정과 새로운 기술을 배우는 것을 즐기는 조승환입니다. 
                     
                   </div>
                 </div>
@@ -36,10 +33,26 @@ export default class Introduction extends Component {
                 <div class='work3'>
                   <h3>일에 있어 가장 중요하게 생각하는 것이 있다면?</h3>
                   <div class='work4'>
-                    제가 사용자 입장에서 생각하는 개발을 추구합니다.<br>
-                    보기 쉬운 UI와 최고의 퍼포먼스로<br>
-                    다양한 사용자들이 편리하게 서비스를 이용할 수 있도록 기여하고자 합니다.<br>
-                    그리고 같이 일하는 동료, 팀원들과 최상의 결과를 낼수있도록 최선을 다할것입니다
+                  일에 있어 같이 일하는 팀원들과 팀워크와<br/>
+                  우리가 해내어야 할 결과에 대해 의논하고 서로 조율하며 <br/>
+                  완벽한 결과를 얻을 수 있도록 노력하는 것이 제일 중요하다고 생각합니다 <br/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class='forte'>
+            <div class='forte1 back-to-position to-right delay-0'>
+              <div class='forte2'>
+                <div class='forte3'>
+                  <h3>당신만의 강점이 있다면?</h3>
+                  <div class='forte4'>
+                    여러 사회생활 경험과 활발한 인간관계경험으로 <br/>
+                    어떤 상황이든 유연하게 대처할 수 있으며 팀에 잘 녹아들어 적응을 잘 할 수있습니다<br/>
+                    그리고 전 문제 해결능력이 뛰어납니다<br/>
+                    여러가지 일을 하며 다양한 문제를 경험하고 해결함으로 <br/>
+                    앞으로도 유동적이고 매우 효율적인 방법으로 문제 해결을 할 수 있습니다.<br/>
                   </div>
                 </div>
               </div>
@@ -47,7 +60,7 @@ export default class Introduction extends Component {
           </div>
 
           <div class='myself'>
-            <div class='myself1 back-to-position to-right delay-0'>
+            <div class='myself1 back-to-position to-left delay-0'>
               <div class='myself2'>
                 <div class='myself3'>
                   <h3>더 자세한 저를 알고 싶어요!</h3>
@@ -67,12 +80,14 @@ export default class Introduction extends Component {
               </div>
             </div>
           </div>
+
         </div>
       </div>
     `;
 
     const turnEls = this.el.querySelector('.turn');
     const workEls = this.el.querySelector('.work');
+    const forteEls = this.el.querySelector('.forte');
     const myselfEls = this.el.querySelector('.myself');
     var controller = new ScrollMagic.Controller();
     // var setMultipleClasses = TweenMax.to('.work', 0.5, {
@@ -97,6 +112,17 @@ export default class Introduction extends Component {
       // reverse: false,
     });
     scene.setClassToggle(workEls, 'show');
+    // scene.setTween(setMultipleClasses);
+    scene.addTo(controller);
+
+    var scene = new ScrollMagic.Scene({
+      // duration: 100,
+      // offset: 200,
+      triggerElement: forteEls,
+      triggerHook: 0.8,
+      // reverse: false,
+    });
+    scene.setClassToggle(forteEls, 'show');
     // scene.setTween(setMultipleClasses);
     scene.addTo(controller);
 

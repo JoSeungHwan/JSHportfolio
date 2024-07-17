@@ -311,6 +311,10 @@ footer a:hover {
   .headline p {
     font-size: 15px;
   }
+
+  .headline img {
+    width: 250px;
+  }
 }
 
 @media (width <= 380px) {
@@ -321,6 +325,10 @@ footer a:hover {
 
   .headline p {
     font-size: 10px;
+  }
+
+  .headline img {
+    width: 200px;
   }
 }
 

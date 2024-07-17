@@ -326,6 +326,9 @@ footer a:hover {
   .headline p {
     font-size: 15px;
   }
+  .headline img {
+    width: 250px;
+  }
 }
 @media (max-width: 380px) {
   .headline h1 {
@@ -336,8 +339,7 @@ footer a:hover {
     font-size: 10px;
   }
   .headline img {
-    /* display: none; */
-    /* height: 500px; */
+    width: 200px;
   }
 }
 .headline .fade-in {

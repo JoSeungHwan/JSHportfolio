@@ -6,11 +6,15 @@ export default class Headline extends Component {
     this.el.classList.add('headline');
     this.el.innerHTML = /* html */ `
       <h1 class="fade-in">
-        <span>다양한 프로젝트 경험으로</span><br/>
-        경험이 많은<br/>
+        <span>"혼자 하는 것이 아닌 같이 하는 것"</span><br/>
+        다양한 프로젝트 경험으로
+        협업 경험이 많은<br/>
         조승환 입니다.<br />
       </h1>
       <p class="fade-in">
+      지금까진 앱, 웹 개발에 집중해 왔지만<br/>
+      앱 웹 기획자로 전향을 결심 하였습니다. <br/>
+      <br/>
         사용자에게 최고의 경험과 편의성을 제공할 수 있는<br/>
         사람으로 성장하겠습니다.
       </p>

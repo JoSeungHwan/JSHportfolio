@@ -931,11 +931,15 @@ class Headline extends (0, _jo.Component) {
         this.el.classList.add("headline");
         this.el.innerHTML = /* html */ `
       <h1 class="fade-in">
-        <span>\u{B2E4}\u{C591}\u{D55C} \u{D504}\u{B85C}\u{C81D}\u{D2B8} \u{ACBD}\u{D5D8}\u{C73C}\u{B85C}</span><br/>
-        \u{ACBD}\u{D5D8}\u{C774} \u{B9CE}\u{C740}<br/>
+        <span>"\u{D63C}\u{C790} \u{D558}\u{B294} \u{AC83}\u{C774} \u{C544}\u{B2CC} \u{AC19}\u{C774} \u{D558}\u{B294} \u{AC83}"</span><br/>
+        \u{B2E4}\u{C591}\u{D55C} \u{D504}\u{B85C}\u{C81D}\u{D2B8} \u{ACBD}\u{D5D8}\u{C73C}\u{B85C}
+        \u{D611}\u{C5C5} \u{ACBD}\u{D5D8}\u{C774} \u{B9CE}\u{C740}<br/>
         \u{C870}\u{C2B9}\u{D658} \u{C785}\u{B2C8}\u{B2E4}.<br />
       </h1>
       <p class="fade-in">
+      \u{C9C0}\u{AE08}\u{AE4C}\u{C9C4} \u{C571}, \u{C6F9} \u{AC1C}\u{BC1C}\u{C5D0} \u{C9D1}\u{C911}\u{D574} \u{C654}\u{C9C0}\u{B9CC}<br/>
+      \u{C571} \u{C6F9} \u{AE30}\u{D68D}\u{C790}\u{B85C} \u{C804}\u{D5A5}\u{C744} \u{ACB0}\u{C2EC} \u{D558}\u{C600}\u{C2B5}\u{B2C8}\u{B2E4}. <br/>
+      <br/>
         \u{C0AC}\u{C6A9}\u{C790}\u{C5D0}\u{AC8C} \u{CD5C}\u{ACE0}\u{C758} \u{ACBD}\u{D5D8}\u{ACFC} \u{D3B8}\u{C758}\u{C131}\u{C744} \u{C81C}\u{ACF5}\u{D560} \u{C218} \u{C788}\u{B294}<br/>
         \u{C0AC}\u{B78C}\u{C73C}\u{B85C} \u{C131}\u{C7A5}\u{D558}\u{ACA0}\u{C2B5}\u{B2C8}\u{B2E4}.
       </p>

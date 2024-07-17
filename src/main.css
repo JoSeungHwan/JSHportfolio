@@ -290,7 +290,7 @@ footer a:hover {
 .headline h1 {
   font-family: 'Oswald', sans-serif;
   font-size: 80px;
-  line-height: 1;
+  line-height: 1.3;
   margin-bottom: 40px;
   padding-top: 100px;
 }
@@ -312,28 +312,28 @@ footer a:hover {
 }
 @media (max-width: 600px) {
   .headline h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
   .headline img {
     width: 300px;
   }
 }
-@media (max-height: 1000px) {
+@media (max-width: 500px) {
   .headline h1 {
-    font-size: 50px;
+    font-size: 20px;
+    padding-top: 150px;
   }
 }
-@media (max-height: 750px) {
+@media (max-width: 380px) {
   .headline h1 {
-    font-size: 40px;
+    font-size: 20px;
+    padding-top: 100px;
   }
-}
-@media (max-height: 500px) {
-  .headline h1 {
-    font-size: 40px;
+  .headline p {
+    font-size: 15px;
   }
   .headline img {
-    display: none;
+    /* display: none; */
     /* height: 500px; */
   }
 }
